@@ -1,17 +1,15 @@
-import { For } from 'solid-js';
 import { useI18n } from "../../i18n";
-import MetaData from "../../components/meta";
 import { Aside, Header, Footer, Main, Section } from "../../components/layout";
-import { Title, Text, A } from '../../components/ui/typography';
+import { Title, Text } from '../../components/ui/typography';
 import { Signup, ContactUs } from '../../components/ui/buttons';
 import Card from '../../components/ui/card';
 import Slide from '../../components/ui/widgets/slide';
 
 import hero from '../../assets/images/home/hero.svg';
-import service from '../../assets/images/home/Image.svg';
-import testimonial from '../../assets/images/home/Client Image.svg';
-import mission from '../../assets/images/home/mission.svg';
-import blog from '../../assets/images/home/blog.svg';
+// import service from '../../assets/images/home/Image.svg';
+// import testimonial from '../../assets/images/home/Client Image.svg';
+// import mission from '../../assets/images/home/mission.svg';
+// import blog from '../../assets/images/home/blog.svg';
 import icon_1 from '../../assets/images/home//Icon_1.svg';
 import icon_2 from '../../assets/images/home//Icon_2.svg';
 import icon_3 from '../../assets/images/home//Icon_3.svg';
@@ -27,7 +25,6 @@ export default function Home() {
 
   return (
     <>
-      <MetaData/>
       <Header />
       <Main class="gap-8">
         <Section class="gap-2">

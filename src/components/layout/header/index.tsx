@@ -12,7 +12,7 @@ export default function Header() {
 
   const [language, setLanguage] = setLocaleI18n();
   const [flag, setFlag, flags] = useFlag();
-  const menu = useI18n("global.header.menu");
+  const t = useI18n("global");
 
   const [theme, setTheme] = useTheme();
 
@@ -46,7 +46,7 @@ export default function Header() {
               href="/about"
               end
             >
-              {menu("about")}
+              {t("header.menu.about")}
             </A>
             <A
               class="hover:text-purple"
@@ -54,7 +54,7 @@ export default function Header() {
               href="/careers"
               end
             >
-              {menu("careers")}
+              {t("header.menu.careers")}
             </A>
             <A
               class="hover:text-purple"
@@ -62,7 +62,7 @@ export default function Header() {
               href="/blogs"
               end={true}
             >
-              {menu("blogs")}
+              {t("header.menu.blogs")}
             </A>
             <A
               class="hover:text-purple"
@@ -70,7 +70,7 @@ export default function Header() {
               href="/pricing"
               end
             >
-              {menu("pricing")}
+              {t("header.menu.pricing")}
             </A>
             <A
               class="hover:text-purple md:hidden"
@@ -78,7 +78,7 @@ export default function Header() {
               href="/contact"
               end
             >
-              {menu("contact")}
+              {t("header.menu.contact")}
             </A>
           </nav>
         </div>
@@ -86,7 +86,7 @@ export default function Header() {
           class="hidden rounded-full bg-purple p-0.375 px-1.25 text-white md:block hover:bg-purple-light"
           href="/contact"
         >
-          {menu("contact")}
+          {t("header.menu.contact")}
         </A>
       </header>
       <span class="ml-1 flex w-9 items-center justify-evenly rounded-full bg-dark dark:bg-white md:ml-1.5 relative">
