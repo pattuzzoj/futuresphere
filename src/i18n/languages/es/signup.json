@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "",
+    "keywords": "",
+    "description": ""
+  },
+  "title": "Registro",
+  "subtitle": "Envía tu solicitud de registro y nos pondremos en contacto lo antes posible.",
+  "form": {
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "number": "Número de Teléfono",
+    "teste": "¿Ya tienes una cuenta?",
+    "submit": "Empezar"
+  },
+  "succeded": {
+    "title": "Tu solicitud de registro se ha enviado correctamente.",
+    "subtitle": "Nuestro equipo se pondrá en contacto contigo pronto.",
+    "back": "Volver a Inicio"
+  }
+}

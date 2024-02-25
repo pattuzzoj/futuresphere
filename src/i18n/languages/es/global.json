@@ -1,0 +1,28 @@
+{
+  "header": {
+    "menu": {
+      "blogs": "Blogs",
+      "careers": "Carreras",
+      "pricing": "Precios",
+      "about": "Acerca de",
+      "contact": "Contacto"
+    }
+  },
+  "footer": {
+    "menu": {
+      "blogs": "Blogs",
+      "careers": "Carreras",
+      "pricing": "Precios",
+      "about": "Acerca de",
+      "contact": "Contacto"
+    }
+  },
+  "aside": {
+    "title": "Haz cosas geniales con nosotros.",
+    "text": "Mantente al tanto de las novedades de nuestro equipo y comunidad. Una vez al mes.",
+    "email": {
+      "placeholder": "Ingresa tu correo electrónico",
+      "subscribe": "Suscribirse al boletín informativo"
+    }
+  }
+}

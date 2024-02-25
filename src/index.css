@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root[data-theme="dark"] {
+    --color-background: #1B152B;
+    --color-primary: #7F56D9;
+    --color-secondary: #1B152B;
+    --color-tertiary: #C7A0F9;
+  }
+
+  :root[data-theme="light"] {
+    --color-background: #F9FAFB;
+    --color-primary: #7F56D9;
+    --color-secondary: #F9FAFB;
+    --color-tertiary: #C7A0F9;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-background: #1B152B;
+  --color-primary: #7F56D9;
+  --color-secondary: #1B152B;
+  --color-tertiary: #C7A0F9;
+}
+
+:root[data-theme="light"] {
+  --color-background: #F9FAFB;
+  --color-primary: #7F56D9;
+  --color-secondary: #F9FAFB;
+  --color-tertiary: #C7A0F9;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+* {
+  transition: color 0.25s linear;
+  transition: background-color 0.25s linear;
+}
+
+html {
+  font-size: clamp(10px, 2vw, 16px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: 600;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+  color: var(--color-title);
+}
+
+h4, h5, h6 {
+  font-family: var(--font-subtitle);
+  color: var(--color-subtitle);
+}
+
+h1 {
+  font-size: 2.9rem;
+  line-height: 3.1rem;
+  word-spacing: 0.07rem;
+  letter-spacing: 0.13rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+  line-height: 2.9rem;
+  word-spacing: 0.07rem;
+  letter-spacing: 0.11rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+  line-height: 2.3rem;
+  word-spacing: 0.05rem;
+  letter-spacing: 0.07rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  word-spacing: 0.05rem;
+  letter-spacing: 0.05rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  word-spacing: 0.03rem;
+  letter-spacing: 0.03rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  word-spacing: 0.03rem;
+  letter-spacing: 0.02rem;
+}
+
+span, p, pre, cite, dfn, abbr,
+q, blockquote, li, dl, dt, dd,
+th, td, legend, figcaption, label,
+a, button, small, summary {
+  font-family: var(--font-text);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  word-spacing: 0.03rem;
+  letter-spacing: 0.02rem;
+  color: inherit;
+}
+
+a {
+  font-family: var(--font-link);
+  color: var(--color-link);
+}
+
+a:link {}
+
+a:visited {}
+
+a:hover {}
+
+a:active {}
+
+button {
+  font-family: var(--font-button);
+  color: var(--color-button);
+}
+
+small {
+  font-size: 0.7rem;
+  font-weight: 200;
+  line-height: 1rem;
+}

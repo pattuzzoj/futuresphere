@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "",
+    "keywords": "",
+    "description": ""
+  },
+  "title": "Cadastro",
+  "subtitle": "Envie seu pedido de cadastro e entraremos em contato o mais rápido possível.",
+  "form": {
+    "name": "Nome",
+    "email": "E-mail",
+    "number": "Número de Telefone",
+    "teste": "Já tem uma conta?",
+    "submit": "Começar"
+  },
+  "succeded": {
+    "title": "Seu pedido de cadastro foi enviado com sucesso.",
+    "subtitle": "Nossa equipe entrará em contato em breve.",
+    "back": "Voltar para Página Inicial"
+  }
+}

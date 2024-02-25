@@ -1,0 +1,7 @@
+:root {
+  --screen-extra-small: 540px;
+  --screen-small: 768px;
+  --screen-medium: 1024px;
+  --screen-large: 1366px;
+  --screen-extra-large: 1920px;
+}
