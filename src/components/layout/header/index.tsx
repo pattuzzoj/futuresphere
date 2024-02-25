@@ -2,19 +2,17 @@ import { createSignal, Show } from "solid-js";
 import { A } from "@solidjs/router";
 import { Icon } from "../../ui";
 import useTheme from "../../../theme";
-import { useI18n, setLocaleI18n } from "../../../i18n";
-import { useFlag } from "../../../i18n";
+import { useI18n, setLocaleI18n, useFlag } from "../../../i18n";
 import Logo from "../../ui/logo";
 
 export default function Header() {
   const [menuIsOpen, setMenuIsOpen] = createSignal(false);
   const [menuLanguageisOpen, setMenuLanguageIsOpen] = createSignal(false);
 
-  const [language, setLanguage] = setLocaleI18n();
-  const [flag, setFlag, flags] = useFlag();
+  const [_language, setLanguage] = setLocaleI18n();
+  const [_flag, _setFlag, _flags] = useFlag();
   const t = useI18n("global");
-
-  const [theme, setTheme] = useTheme();
+  const [theme, _setTheme] = useTheme();
 
   return (
     <div class="m-1 flex justify-evenly md:m-1.5">
@@ -95,7 +93,7 @@ export default function Header() {
             class=""
             onClick={() => setMenuLanguageIsOpen(!menuLanguageisOpen())}
           >
-            <img class="size-2" src={flag()} alt="" />
+            <img class="size-2" src={''} alt="" />
           </button>
           <div
             class={`${menuLanguageisOpen() ? "flex" : "hidden"} absolute left-0.875 top-3.5 w-3 flex-col items-center gap-0 rounded-lg bg-dark p-0.5 dark:bg-white`}
@@ -104,31 +102,28 @@ export default function Header() {
               title="Portuguese"
               onClick={() => {
                 setLanguage("pt");
-                setFlag(flags.pt);
                 setMenuLanguageIsOpen(!menuLanguageisOpen());
               }}
             >
-              <img class="size-2" src={flags["pt"]} alt="" />
+              <img class="size-2" src={''} alt="" />
             </button>
             <button
               title="English"
               onClick={() => {
                 setLanguage("en");
-                setFlag(flags.en);
                 setMenuLanguageIsOpen(!menuLanguageisOpen());
               }}
             >
-              <img class="size-2" src={flags["en"]} alt="" />
+              <img class="size-2" src={''} alt="" />
             </button>
             <button
               title="Spanish"
               onClick={() => {
                 setLanguage("es");
-                setFlag(flags.es);
                 setMenuLanguageIsOpen(!menuLanguageisOpen());
               }}
             >
-              <img class="size-2" src={flags["es"]} alt="" />
+              <img class="size-2" src={''} alt="" />
             </button>
           </div>
         </span>
@@ -138,7 +133,7 @@ export default function Header() {
             <button
               title="dark"
               class="inline-block rounded-full bg-dark dark:bg-white dark:text-black"
-              onClick={() => setTheme("light")}
+              onClick={() => {}}
             >
               <Icon
                 class="inline-block"
@@ -152,7 +147,7 @@ export default function Header() {
           <button
             title="light"
             class="inline-block rounded-full bg-dark dark:bg-white dark:text-black"
-            onClick={() => setTheme("dark")}
+            onClick={() => {}}
           >
             <Icon
               class="inline-block"

@@ -58,7 +58,7 @@ export default function Slide(props: Props) {
           ),
           "indicators": (
             <For each={list()}>
-              {(item, index) => <button class={`size-1 rounded-full border-2 border-purple ${index() == position() && "bg-purple"}`} onClick={() => setPosition(index())}></button>}
+              {(_item, index) => <button class={`size-1 rounded-full border-2 border-purple ${index() == position() && "bg-purple"}`} onClick={() => setPosition(index())}></button>}
             </For>
           )
         }[props.control]}

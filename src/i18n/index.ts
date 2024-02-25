@@ -23,8 +23,7 @@ window.addEventListener("storage", langUpdateListener);
 const [language, setLanguage] = createSignal<Locale>(storedLang);
 const dictionary = createMemo(() => i18n.flatten(dictionaries[language()]));
 const translate = i18n.translator(dictionary);
-const [flag, setFlag] = createSignal(flags[language()]);
-
+const [_flag, setFlag] = createSignal(flags[language()]);
 
 function langUpdateListener(event: StorageEvent) {
   if (event.key === "lang" && event.newValue !== null) {
@@ -44,10 +43,10 @@ export function setLocaleI18n() {
   return [language, setLanguage];
 }
 
-export function useI18n(scope) {
+export function useI18n(scope: any) {
   return i18n.scopedTranslator(translate, scope);
 }
 
 export function useFlag() {
-  return [flag, setFlag, flags];
+  return [_flag, setFlag, flags];
 }

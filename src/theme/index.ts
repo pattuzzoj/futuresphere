@@ -3,16 +3,18 @@ import { HTML } from '../utils/constants'
 
 type Theme = "light" | "dark";
 
-let defaultTheme: Theme = "light";
 const storedTheme: any = localStorage.getItem("theme");
 
-if(!storedTheme) {
-  localStorage.setItem("theme", defaultTheme);
-} else {
-  defaultTheme = storedTheme;
+const defaultTheme = () => {
+  if(!storedTheme) {
+    localStorage.setItem("theme", "light");
+    return "light";
+  } else {
+    return storedTheme;
+  }
 }
 
-const [theme, setTheme] = createSignal(defaultTheme);
+const [theme, setTheme] = createSignal(defaultTheme());
 HTML.setAttribute("data-theme", theme());
 
 createEffect(() => {
