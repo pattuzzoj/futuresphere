@@ -31,7 +31,6 @@ export default function Header() {
           >
             <Icon
               color="text-white dark:text-purple size-1.5"
-              lib="remix"
               name="RiSystemMenu2Line"
             />
           </button>
@@ -138,7 +137,6 @@ export default function Header() {
               <Icon
                 class="inline-block"
                 color="fill-yellow-500  stroke-yellow-500 size-1.5"
-                lib="feather"
                 name="FiMoon"
               />
             </button>
@@ -152,7 +150,6 @@ export default function Header() {
             <Icon
               class="inline-block"
               color="fill-yellow-500 stroke-yellow-500 size-1.5"
-              lib="feather"
               name="FiSun"
             />
           </button>

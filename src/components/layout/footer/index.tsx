@@ -27,19 +27,16 @@ export default function Footer() {
           <Icon
             class="hover:bg-dark inline-block cursor-pointer rounded-full p-0.5"
             color="fill-white"
-            lib="bootstrap"
             name="BsTwitter"
           />
           <Icon
             class="hover:bg-dark inline-block cursor-pointer rounded-full p-0.5"
             color="fill-white"
-            lib="bootstrap"
             name="BsFacebook"
           />
           <Icon
             class="hover:bg-dark inline-block cursor-pointer rounded-full p-0.5"
             color="fill-white"
-            lib="bootstrap"
             name="BsLinkedin"
           />
         </nav>
