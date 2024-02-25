@@ -34,6 +34,4 @@ function themeUpdateListener(event: StorageEvent) {
   }
 }
 
-export default function useTheme() {
-  return [theme, setTheme];
-}
+export {theme, setTheme};
