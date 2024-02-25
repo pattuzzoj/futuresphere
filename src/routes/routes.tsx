@@ -1,5 +1,4 @@
 import { lazy } from 'solid-js';
-// import { PrivateRoute, privateRoutes} from './PrivateRoute';
 
 const Home = lazy(() => import('../pages/home'));
 const About = lazy(() => import('../pages/about'));
@@ -58,8 +57,4 @@ export const routes = [
     path: '*',
     component: NotFound,
   },
-  // {
-  //   component: PrivateRoute,
-  //   children: privateRoutes
-  // },
 ];

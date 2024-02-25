@@ -1,6 +1,6 @@
 import { createSignal, Show } from "solid-js";
 import { A } from "@solidjs/router";
-import { Button, DropDown, Icon } from "../../ui";
+import { Icon } from "../../ui";
 import useTheme from "../../../theme";
 import { useI18n, setLocaleI18n } from "../../../i18n";
 import { useFlag } from "../../../i18n";
