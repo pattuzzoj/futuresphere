@@ -48,12 +48,12 @@ export default function Slide(props: Props) {
       <br />
       {
       props.control &&
-      <span class={`flex gap-0.5 justify-${props.position || "center"}`}>
+      <span class={`flex gap-0.5 ${{"start": "justify-start", "center": "justify-center", "end":"justify-end"}[props.position!]}`}>
         {{
           "buttons": (
             <>
-            <button class="size-3 p-0.5 text-purple border-2 border-purple hover:bg-purple hover:text-white rounded-full" onClick={previousPosition}>&lt;</button>
-            <button class="size-3 p-0.5 text-purple border-2 border-purple hover:bg-purple hover:text-white rounded-full" onClick={nextPosition}>&gt;</button>
+            <button class="size-3 p-0.5 text-purple text-xl border-2 border-purple hover:bg-purple hover:text-white rounded-full" onClick={previousPosition}>&lt;</button>
+            <button class="size-3 p-0.5 text-purple text-xl border-2 border-purple hover:bg-purple hover:text-white rounded-full" onClick={nextPosition}>&gt;</button>
             </>
           ),
           "indicators": (

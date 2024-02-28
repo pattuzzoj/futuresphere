@@ -1,13 +1,19 @@
-import Icon from './icon';
-import List from './list';
-import { Signup, ContactUs } from './buttons';
-import { Accordion, Dropdown, Slide } from './widgets';
-import { Title, Text, A } from './typography';
+import Icon from "./icon";
+import List from "./list";
+import Button from "./button";
+import { Accordion, Dropdown, Slide } from "./widgets";
+import { Title, Text, A } from "./typography";
+import Card from "./card";
 
 export {
   Icon,
   List,
-  Signup, ContactUs,
-  Accordion, Dropdown, Slide,
-  Title, Text, A
+  Button,
+  Accordion,
+  Dropdown,
+  Slide,
+  Title,
+  Text,
+  A,
+  Card,
 };

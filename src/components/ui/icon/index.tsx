@@ -16,16 +16,16 @@ interface Props extends JSX.HTMLAttributes<HTMLSpanElement> {
 
 export default function Icon(props: Props) {
   const IconComponent = {
-    "BsTwitter": BsTwitter,
-    "BsFacebook": BsFacebook,
-    "BsLinkedin": BsLinkedin,
-    "FiSun": FiSun,
-    "FiMoon": FiMoon,
-    "RiSystemMenu2Line": RiSystemMenu2Line
+    BsTwitter,
+    BsFacebook,
+    BsLinkedin,
+    FiSun,
+    FiMoon,
+    RiSystemMenu2Line
   }[props.name]
       
 
   return (
-    <span title={props.title} class={`${props.class} flex justify-center items-center`}><IconComponent class={`${props.color}`}/></span>
+    <IconComponent class={`${props.color}`} title={props.title}/>
   );
 }

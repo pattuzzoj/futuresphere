@@ -24,21 +24,24 @@ export default function Footer() {
           © 2024 FutureSphere. All rights reserved.
         </small>
         <nav aria-label="Social Media" class="hidden gap-1 sm:flex">
-          <Icon
-            class="hover:bg-dark inline-block cursor-pointer rounded-full p-0.5"
-            color="fill-white"
-            name="BsTwitter"
-          />
-          <Icon
-            class="hover:bg-dark inline-block cursor-pointer rounded-full p-0.5"
-            color="fill-white"
-            name="BsFacebook"
-          />
-          <Icon
-            class="hover:bg-dark inline-block cursor-pointer rounded-full p-0.5"
-            color="fill-white"
-            name="BsLinkedin"
-          />
+          <a class="hover:bg-dark cursor-pointer rounded-full p-0.5 flex items-center justify-center" href="">
+            <Icon
+              color="fill-white"
+              name="BsTwitter"
+            />
+          </a>
+          <a class="hover:bg-dark cursor-pointer rounded-full p-0.5 flex items-center justify-center" href="">
+            <Icon
+              color="fill-white"
+              name="BsFacebook"
+            />
+          </a>
+          <a class="hover:bg-dark cursor-pointer rounded-full p-0.5 flex items-center justify-center" href="">
+            <Icon
+              color="fill-white"
+              name="BsLinkedin"
+            />
+          </a>
         </nav>
       </div>
     </footer>
