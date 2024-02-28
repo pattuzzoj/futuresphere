@@ -1,6 +1,5 @@
 // I18nContextProvider.jsx
 import { createSignal, createEffect, createMemo } from 'solid-js';
-import { useLocation } from '@solidjs/router';
 import * as i18n from '@solid-primitives/i18n';
 import { dictionaries } from './languages';
 import { HTML } from '../utils/constants';
