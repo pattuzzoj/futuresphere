@@ -2,7 +2,7 @@ import { For } from 'solid-js';
 import { useI18n } from "../../i18n";
 import { Header, Main, Section, Aside, Footer } from "../../components/layout";
 import MetaData from '../../components/meta';
-import { Title, Text, Link, Card, Icon, Slide } from "../../components/ui";
+import { Title, Text, Link, Card } from "../../components/ui";
 
 import hero from "../../assets/images/about/hero.svg";
 
