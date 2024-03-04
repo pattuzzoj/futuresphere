@@ -4,12 +4,12 @@ import { Header, Main, Aside, Footer } from "../../components/layout";
 import MetaData from '../../components/meta';
 import { Title, Text, Card } from "../../components/ui";
 
-import icon_1 from "../../assets/icons/features/icon-0.svg";
-import icon_2 from "../../assets/icons/features/icon-1.svg";
-import icon_3 from "../../assets/icons/features/icon-2.svg";
-import icon_4 from "../../assets/icons/features/icon-3.svg";
-import icon_5 from "../../assets/icons/features/icon-4.svg";
-import icon_6 from "../../assets/icons/features/icon-5.svg";
+import icon_1 from "../../assets/icons/features/icon-1.svg";
+import icon_2 from "../../assets/icons/features/icon-2.svg";
+import icon_3 from "../../assets/icons/features/icon-3.svg";
+import icon_4 from "../../assets/icons/features/icon-4.svg";
+import icon_5 from "../../assets/icons/features/icon-5.svg";
+import icon_6 from "../../assets/icons/features/icon-6.svg";
 
 const featureIcons = [icon_1, icon_2, icon_3, icon_4, icon_5, icon_6];
 
