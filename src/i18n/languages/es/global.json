@@ -1,4 +1,10 @@
 {
+  "ui": {
+    "signup": "Registrarse",
+    "contact": "Contacto",
+    "view": "Ver Todo",
+    "more": "Leer Más"
+  },
   "header": {
     "menu": {
       "blogs": "Blogs",

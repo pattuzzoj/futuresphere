@@ -1,9 +1,32 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Preços Transparentes para Valor Excepcional",
+    "keywords": "preços, preços transparentes, valor, planos, serviços, características, básico, negócios, empresa, mês, startups, design responsivo de website, otimização de SEO básica, suporte ao cliente, largura de banda ilimitada, domínio personalizado, certificado SSL seguro, análises avançadas e relatórios, integração de comércio eletrônico",
+    "description": "Encontre o plano perfeito para suas necessidades com nossas opções de preços diretas. Descubra taxas competitivas e desbloqueie o valor excepcional que oferecemos para nossos serviços de primeira linha."
   },
-  "title": "",
-  "subtitle": ""
+  "title": "Preços Transparentes para Valor Excepcional",
+  "text": "Encontre o plano perfeito para suas necessidades com nossas opções de preços diretas. Descubra taxas competitivas e desbloqueie o valor excepcional que oferecemos para nossos serviços de primeira linha.",
+  "plans": {
+    "basic": "Plano Básico",
+    "business": "Plano Negócio",
+    "enterprise": "Plano Empresarial",
+    "period": "mês",
+    "text": "Ótimo para startups",
+    "button": "Começar",
+    "recommended": "Recomendado",
+    "infrastructure": {
+      "design": "Design Responsivo do Site",
+      "seo": "Otimização Básica de SEO",
+      "support": "Suporte ao Cliente 24/7"
+    },
+    "features": {
+      "title": "Características",
+      "bandwidth": "Largura de Banda Ilimitada",
+      "domain": "Domínio Personalizado",
+      "certificate": "Certificado SSL Seguro",
+      "support": "Suporte ao Cliente Prioritário",
+      "reporting": "Análises e Relatórios Avançados",
+      "integration": "Integração de Comércio Eletrônico"
+    }
+  }
 }

@@ -1,9 +1,9 @@
-import A from './link';
+import Link from './link';
 import Text from './text';
 import Title from './title';
 
 export {
-  A,
+  Link,
   Text,
   Title
 }

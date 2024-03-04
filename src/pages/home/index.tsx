@@ -2,15 +2,14 @@ import { For } from 'solid-js';
 import { useI18n } from "../../i18n";
 import { Header, Main, Section, Aside, Footer } from "../../components/layout";
 import MetaData from '../../components/meta';
-import { Title, Text } from "../../components/ui/typography";
-import Button from "../../components/ui/button";
+import { Title, Text, Link } from "../../components/ui/typography";
 import Card from "../../components/ui/card";
 import Slide from "../../components/ui/widgets/slide";
 
 import hero from "../../assets/images/home/hero.svg";
-import icon_1 from "../../assets/images/home/Icon_1.svg";
-import icon_2 from "../../assets/images/home/Icon_2.svg";
-import icon_3 from "../../assets/images/home/Icon_3.svg";
+import feature_1 from "../../assets/icons/features/feature-1.svg";
+import feature_2 from "../../assets/icons/features/feature-2.svg";
+import feature_3 from "../../assets/icons/features/feature-3.svg";
 
 import discord from "../../assets/icons/clients/discord.svg";
 import google from "../../assets/icons/clients/google.svg";
@@ -20,7 +19,7 @@ import slack from "../../assets/icons/clients/slack.svg";
 export default function Home() {
   const t = useI18n("home");
 
-  const featureIcons = [icon_1, icon_2, icon_3];
+  const featureIcons = [feature_1, feature_2, feature_3];
   const servicesImages = [
     "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVhbXxlbnwwfHwwfHx8MA%3D%3D",
     "https://plus.unsplash.com/premium_photo-1661414415246-3e502e2fb241?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFya2V0aW5nfGVufDB8fDB8fHww",
@@ -43,8 +42,8 @@ export default function Home() {
           </Title>
           <Text class="text-2xl">{t("text")}</Text>
           <span class="flex justify-center gap-1">
-            <Button type="signup" />
-            <Button type="contact" />
+            <Link type="signup" />
+            <Link type="contact" />
           </span>
           <img class="w-100 rounded-full my-3" src={hero} alt="" loading="lazy" />
           <div class="flex flex-col justify-evenly gap-1 md:flex-row">
@@ -70,6 +69,10 @@ export default function Home() {
               {(data, index) => <Card type="info" thumbnail={featureIcons[index()]} title={data.title} text={data.text}/>}
             </For>
           </div>
+          <span class="flex items-center justify-center gap-1 mt-1.5">
+            <Link type="contact" />
+            <Link type="view" href="/features" />
+          </span>
         </Section>
         <Section>
           <h6 class="text-purple">{t("our mission statement.section")}</h6>
@@ -108,7 +111,7 @@ export default function Home() {
           </div>
         </Section>
         <Section>
-          <Slide type="slideItem" control="buttons" position="start">
+          <Slide type="item" control="buttons" position="start">
             <div class="grid md:grid-cols-2 gap-1.5 text-start">
               <div class="flex flex-col justify-center gap-1 text-start">
                 <h6 class="text-purple">{t("services.section")}</h6>
@@ -138,7 +141,7 @@ export default function Home() {
         <Section>
           <h6 class="text-purple">{t("testimonials.section")}</h6>
           <Title level="2">{t("testimonials.title")}</Title>
-          <Slide type="slideItem" control="buttons" position="end">
+          <Slide type="item" control="buttons" position="end">
             <div class="grid md:grid-cols-2 gap-1.5 text-start">
               <img class="size-100 md:h-24 rounded-3xl object-cover" src={testimonialsImages[0]} alt="" />
               <div class="flex flex-col justify-between gap-1 text-start">
@@ -176,7 +179,7 @@ export default function Home() {
           <Title class="" level="2">
             {t("features.title")}
           </Title>
-          <div class="grid gap-4 text-start md:grid-cols-2 md:gap-3 lg:grid-cols-3 lg:gap-2">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center items-start gap-3 mt-2">
             <For each={t("blogs.blogs")}>
               {(data, _index) => (
                 <Card
@@ -190,10 +193,8 @@ export default function Home() {
             </For>
           </div>
           <span class="flex items-center justify-center gap-1 mt-1.5">
-            <Button type="contact" />
-            <a class="text-purple-light" href="">
-              View All &gt;
-            </a>
+            <Link type="contact" />
+            <Link type="view" href="/blogs" />
           </span>
         </Section>
         <Aside />

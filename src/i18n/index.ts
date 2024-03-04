@@ -4,8 +4,8 @@ import * as i18n from '@solid-primitives/i18n';
 import { dictionaries } from './languages';
 import { HTML } from '../utils/constants';
 import portuguese from '../assets/icons/flags/brazil.svg';
-import english from '../assets/icons/flags/english-flag.svg';
-import spanish from '../assets/icons/flags/spain-flag.svg';
+import english from '../assets/icons/flags/english.svg';
+import spanish from '../assets/icons/flags/spain.svg';
 
 type Locale = "en" | "es" | "pt";
 

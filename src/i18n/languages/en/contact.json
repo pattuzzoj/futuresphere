@@ -1,9 +1,109 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Contact Us",
+    "keywords": "contact, us, future, sphere, sales, partners, support, business, customer, service",
+    "description": "At FutureSphere our mission is to empower individuals and businesses through innovative technology solutions that enrich lives, foster growth, and drive positive change."
   },
-  "title": "",
-  "subtitle": ""
+  "title": "Contact Us",
+  "text": "At FutureSphere our mission is to empower individuals and businesses through innovative technology solutions that enrich lives, foster growth, and drive positive change.",
+  "form": {
+    "first name": {
+      "text": "First Name",
+      "required": "This field is required",
+      "error": "Please enter a valid first name"
+    },
+    "last name": {
+      "text": "Last Name",
+      "required": "This field is required",
+      "error": "Please enter a valid last name"
+    },
+    "email": {
+      "text": "Email",
+      "required": "This field is required",
+      "error": "Please enter a valid email address (example@example.com)"
+    },
+    "subject": {
+      "text": "Subject",
+      "required": "This field is required",
+      "error": "Subject must be at least 5 characters long"
+    },
+    "services": {
+      "text": "Services",
+      "development": "Development",
+      "design": "Design",
+      "seo": "SEO",
+      "marketing": "Marketing",
+      "consulting": "Consulting"
+    },
+    "message": {
+      "text": "Message",
+      "required": "This field is required",
+      "error": "Message must be at least 20 characters long"
+    },
+    "terms": {
+      "text": "I agree with terms of usage and privacy policy.",
+      "required": "You must agree to the terms"
+    },
+    "submit": "Submit",
+
+    "contacts": {
+      "sales": {
+        "title": "Sales and Business",
+        "email": "abcd1234@gmail.com"
+      },
+      "partners": {
+        "title": "Partners",
+        "email": "partners1234@gmail.com"
+      },
+      "support": {
+        "title": "Customer Support",
+        "email": "support1234@gmail.com"
+      }
+    }
+  },
+  "offices": {
+    "section": "Our Offices",
+    "title": "Discover Our Global Network of Offices",
+    "text": "Experience our expansive network of offices across the world, connecting you to our exceptional services wherever you are.",
+    "offices": [
+      {
+        "city": "San Francisco",
+        "address": "123 Main Street, Suite 200",
+        "number": "(555) 123-4567"
+      },
+      {
+        "city": "New Mexico",
+        "address": "789 Canyon Road",
+        "number": "(555) 555-1234"
+      },
+      {
+        "city": "London",
+        "address": "789 Oak Street, 4th Floor, Suite 402",
+        "number": "+44 20 1234 5678"
+      }
+    ]
+  },
+  "faq": {
+    "section": "FAQs",
+    "title": "Answers to some of your questions",
+    "text": "Don’t find the answers you were looking for? Contact us at",
+    "data": [
+      {
+        "title": "What is included in the startup website template?",
+        "text": "Our startup website template includes a range of essential features and components, such as responsive design, customizable layouts, pre-built sections, integration with popular CMS platforms, and access to a library of high-quality images and icons."
+      },
+      {
+        "title": "Can I customize the template to match my brand's identity?",
+        "text": "Absolutely! Our startup website template provides easy customization options, allowing you to personalize the colors, fonts, logo, and overall look and feel to align with your brand identity. You can create a unique and captivating online presence that reflects your startup's vision."
+      },
+      {
+        "title": "Is the template optimized for search engines (SEO)?",
+        "text": "Yes, our startup website template is designed with SEO best practices in mind. It includes clean code structure, fast loading times, meta tag optimization, and schema markup implementation. These elements contribute to better search engine visibility, helping your website rank higher in search results and attract more organic traffic."
+      },
+      {
+        "title": "Do you offer support and updates for the template?",
+        "text": "Absolutely! We provide dedicated customer support to address any queries or concerns you may have while working with our startup website template. Additionally, we regularly release updates to ensure compatibility with the latest web technologies, security patches, and feature enhancements, ensuring your website stays up-to-date and optimized."
+      }
+    ]
+  }
 }

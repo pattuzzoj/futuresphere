@@ -9,7 +9,6 @@ const Features = lazy(() => import('../pages/features'));
 const Login = lazy(() => import('../pages/login'));
 const SignUp = lazy(() => import('../pages/signup'));
 const Pricing = lazy(() => import('../pages/pricing'));
-const MagicLink = lazy(() => import('../pages/magic-link'));
 const NotFound = lazy(() => import('../pages/404'));
 
 export const routes = [
@@ -48,10 +47,6 @@ export const routes = [
   {
     path: '/pricing',
     component: Pricing,
-  },
-  {
-    path: '/magic-link',
-    component: MagicLink,
   },
   {
     path: '*',

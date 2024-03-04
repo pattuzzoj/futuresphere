@@ -1,9 +1,109 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Entre em Contato",
+    "keywords": "contato, nós, futuro, esfera, vendas, parceiros, suporte, negócios, cliente, serviço",
+    "description": "Na FutureSphere, nossa missão é capacitar indivíduos e empresas por meio de soluções tecnológicas inovadoras que enriquecem vidas, fomentam o crescimento e promovem mudanças positivas."
   },
-  "title": "",
-  "subtitle": ""
+  "title": "Entre em Contato",
+  "text": "Na FutureSphere, nossa missão é capacitar indivíduos e empresas por meio de soluções tecnológicas inovadoras que enriquecem vidas, fomentam o crescimento e promovem mudanças positivas.",
+  "form": {
+    "first name": {
+      "text": "Primeiro Nome",
+      "required": "Este campo é obrigatório",
+      "error": "Por favor, insira um primeiro nome válido"
+    },
+    "last name": {
+      "text": "Último Nome",
+      "required": "Este campo é obrigatório",
+      "error": "Por favor, insira um último nome válido"
+    },
+    "email": {
+      "text": "Email",
+      "required": "Este campo é obrigatório",
+      "error": "Por favor, insira um endereço de email válido (example@example.com)"
+    },
+    "subject": {
+      "text": "Assunto",
+      "required": "Este campo é obrigatório",
+      "error": "O assunto deve ter pelo menos 5 caracteres"
+    },
+    "services": {
+      "text": "Serviços",
+      "development": "Desenvolvimento",
+      "design": "Design",
+      "seo": "SEO",
+      "marketing": "Marketing",
+      "consulting": "Consultoria"
+    },
+    "message": {
+      "text": "Mensagem",
+      "required": "Este campo é obrigatório",
+      "error": "A mensagem deve ter pelo menos 20 caracteres"
+    },
+    "terms": {
+      "text": "Eu concordo com os termos de uso e política de privacidade.",
+      "required": "Você deve concordar com os termos"
+    },
+    "submit": "Enviar",
+
+    "contacts": {
+      "sales": {
+        "title": "Vendas e Negócios",
+        "email": "abcd1234@gmail.com"
+      },
+      "partners": {
+        "title": "Parceiros",
+        "email": "partners1234@gmail.com"
+      },
+      "support": {
+        "title": "Suporte ao Cliente",
+        "email": "support1234@gmail.com"
+      }
+    }
+  },
+  "offices": {
+    "section": "Nossos Escritórios",
+    "title": "Descubra Nossa Rede Global de Escritórios",
+    "text": "Experimente nossa ampla rede de escritórios ao redor do mundo, conectando você aos nossos serviços excepcionais onde quer que esteja.",
+    "offices": [
+      {
+        "city": "São Francisco",
+        "address": "123 Main Street, Suite 200",
+        "number": "(555) 123-4567"
+      },
+      {
+        "city": "Novo México",
+        "address": "789 Canyon Road",
+        "number": "(555) 555-1234"
+      },
+      {
+        "city": "Londres",
+        "address": "789 Oak Street, 4º Andar, Suite 402",
+        "number": "+44 20 1234 5678"
+      }
+    ]
+  },
+  "faq": {
+    "section": "Perguntas Frequentes",
+    "title": "Respostas para algumas de suas perguntas",
+    "text": "Não encontrou as respostas que estava procurando? Entre em contato conosco em",
+    "data": [
+      {
+      "title": "O que está incluído no modelo de site para startups?",
+      "text": "Nosso modelo de site para startups inclui uma variedade de recursos e componentes essenciais, como design responsivo, layouts personalizáveis, seções pré-construídas, integração com plataformas CMS populares e acesso a uma biblioteca de imagens e ícones de alta qualidade."
+      },
+      {
+      "title": "Posso personalizar o modelo para combinar com a identidade da minha marca?",
+      "text": "Absolutamente! Nosso modelo de site para startups oferece opções de personalização fáceis, permitindo que você personalize as cores, fontes, logotipo e a aparência geral para alinhar com a identidade da sua marca. Você pode criar uma presença online única e cativante que reflita a visão de sua startup."
+      },
+      {
+      "title": "O modelo é otimizado para mecanismos de busca (SEO)?",
+      "text": "Sim, nosso modelo de site para startups é projetado com as melhores práticas de SEO em mente. Ele inclui uma estrutura de código limpa, tempos de carregamento rápidos, otimização de meta tags e implementação de marcação de esquema. Esses elementos contribuem para uma melhor visibilidade nos mecanismos de busca, ajudando seu site a se classificar mais alto nos resultados de pesquisa e atrair mais tráfego orgânico."
+      },
+      {
+      "title": "Vocês oferecem suporte e atualizações para o modelo?",
+      "text": "Absolutamente! Nós fornecemos suporte ao cliente dedicado para resolver quaisquer dúvidas ou preocupações que você possa ter ao trabalhar com nosso modelo de site para startups. Além disso, lançamos regularmente atualizações para garantir a compatibilidade com as últimas tecnologias web, correções de segurança e aprimoramentos de recursos, garantindo que seu site permaneça atualizado e otimizado."
+      }
+    ]
+  }
 }

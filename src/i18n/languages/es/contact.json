@@ -1,9 +1,109 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Contacto",
+    "keywords": "contacto, nosotros, futuro, esfera, ventas, socios, soporte, negocios, cliente, servicio",
+    "description": "En FutureSphere, nuestra misión es capacitar a individuos y empresas a través de soluciones tecnológicas innovadoras que enriquecen vidas, fomentan el crecimiento y promueven cambios positivos."
   },
-  "title": "",
-  "subtitle": ""
+  "title": "Contacto",
+  "text": "En FutureSphere, nuestra misión es capacitar a individuos y empresas a través de soluciones tecnológicas innovadoras que enriquecen vidas, fomentan el crecimiento y promueven cambios positivos.",
+  "form": {
+    "first name": {
+      "text": "Nombre",
+      "required": "Este campo es obligatorio",
+      "error": "Por favor, introduzca un nombre válido"
+    },
+    "last name": {
+      "text": "Apellido",
+      "required": "Este campo es obligatorio",
+      "error": "Por favor, introduzca un apellido válido"
+    },
+    "email": {
+      "text": "Correo Electrónico",
+      "required": "Este campo es obligatorio",
+      "error": "Por favor, introduzca una dirección de correo electrónico válida (example@example.com)"
+    },
+    "subject": {
+      "text": "Asunto",
+      "required": "Este campo es obligatorio",
+      "error": "El asunto debe tener al menos 5 caracteres"
+    },
+    "services": {
+      "text": "Servicios",
+      "development": "Desarrollo",
+      "design": "Diseño",
+      "seo": "SEO",
+      "marketing": "Marketing",
+      "consulting": "Consultoría"
+    },
+    "message": {
+      "text": "Mensaje",
+      "required": "Este campo es obligatorio",
+      "error": "El mensaje debe tener al menos 20 caracteres"
+    },
+    "terms": {
+      "text": "Estoy de acuerdo con los términos de uso y la política de privacidad.",
+      "required": "Debe aceptar los términos"
+    },
+    "submit": "Enviar",
+
+    "contacts": {
+      "sales": {
+        "title": "Ventas y Negocios",
+        "email": "abcd1234@gmail.com"
+      },
+      "partners": {
+        "title": "Socios",
+        "email": "partners1234@gmail.com"
+      },
+      "support": {
+        "title": "Soporte al Cliente",
+        "email": "support1234@gmail.com"
+      }
+    }
+  },
+  "offices": {
+    "section": "Nuestras Oficinas",
+    "title": "Descubre Nuestra Red Global de Oficinas",
+    "text": "Experimenta nuestra amplia red de oficinas en todo el mundo, conectándote con nuestros servicios excepcionales donde sea que te encuentres.",
+    "offices": [
+      {
+        "city": "San Francisco",
+        "address": "123 Main Street, Suite 200",
+        "number": "(555) 123-4567"
+      },
+      {
+        "city": "Nuevo México",
+        "address": "789 Canyon Road",
+        "number": "(555) 555-1234"
+      },
+      {
+        "city": "Londres",
+        "address": "789 Oak Street, 4to Piso, Suite 402",
+        "number": "+44 20 1234 5678"
+      }
+    ]
+  },
+  "faq": {
+    "section": "Preguntas Frecuentes",
+    "title": "Respuestas a algunas de tus preguntas",
+    "text": "¿No encuentras las respuestas que buscabas? Contáctanos en",
+    "data": [
+      {
+      "title": "¿Qué está incluido en la plantilla de sitio web para startups?",
+      "text": "Nuestra plantilla de sitio web para startups incluye una variedad de características y componentes esenciales, como diseño receptivo, diseños personalizables, secciones preconstruidas, integración con plataformas CMS populares y acceso a una biblioteca de imágenes e iconos de alta calidad."
+      },
+      {
+      "title": "¿Puedo personalizar la plantilla para que coincida con la identidad de mi marca?",
+      "text": "¡Absolutamente! Nuestra plantilla de sitio web para startups ofrece opciones de personalización fáciles, lo que le permite personalizar los colores, fuentes, logotipo y la apariencia general para que coincida con la identidad de su marca. Puede crear una presencia en línea única y cautivadora que refleje la visión de su startup."
+      },
+      {
+      "title": "¿Está optimizada la plantilla para los motores de búsqueda (SEO)?",
+      "text": "Sí, nuestra plantilla de sitio web para startups está diseñada teniendo en cuenta las mejores prácticas de SEO. Incluye una estructura de código limpio, tiempos de carga rápidos, optimización de metaetiquetas e implementación de marcado de esquema. Estos elementos contribuyen a una mejor visibilidad en los motores de búsqueda, lo que ayuda a que su sitio web se clasifique más alto en los resultados de búsqueda y atraiga más tráfico orgánico."
+      },
+      {
+      "title": "¿Ofrecen soporte y actualizaciones para la plantilla?",
+      "text": "¡Absolutamente! Brindamos soporte al cliente dedicado para abordar cualquier consulta o inquietud que pueda tener al trabajar con nuestra plantilla de sitio web para startups. Además, lanzamos regularmente actualizaciones para garantizar la compatibilidad con las últimas tecnologías web, parches de seguridad y mejoras de funciones, asegurando que su sitio web esté actualizado y optimizado."
+      }
+    ]
+  }
 }

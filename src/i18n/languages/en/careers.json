@@ -1,9 +1,87 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Join Our Team and Shape the Future",
+    "keywords": "join, team, shape, future, web design, remote, on-site, creativity, collaboration, global, flexible work environment, professional development, global networking, cultural diversity, travel opportunities, competitive compensation",
+    "description": "Looking for an opportunity to showcase your web design skills? Join our team of talented designers, both remote and on-site, and bring your creativity to life. Collaborate with a dynamic group, create stunning websites, and make a lasting impact in the world of design, no matter where you are."
   },
-  "title": "",
-  "subtitle": ""
+  "title": "Join Our Team and Shape the Future",
+  "text": "Looking for an opportunity to showcase your web design skills? Join our team of talented designers, both remote and on-site, and bring your creativity to life. Collaborate with a dynamic group, create stunning websites, and make a lasting impact in the world of design, no matter where you are.",
+  
+  "perks": {
+    "section": "Perks",
+    "title": "Perks That Go Beyond Borders",
+    "text": "Experience a world of benefits with our global presence. Enjoy flexible work environments, cultural diversity, professional development opportunities, travel adventures, global networking, and competitive compensation.",
+    "perks": [
+      {
+        "title": "Flexible Work Environment",
+        "text": "Enjoy the freedom to work from anywhere in the world, whether it's the comfort of your home office or the excitement of a new city. Embrace a work-life balance that suits your needs."
+      },
+      {
+        "title": "Professional Development",
+        "text": "Gain access to a wide range of learning and development opportunities. From training programs to conferences, sharpen your skills and expand your knowledge to stay ahead in the ever-evolving industry."
+      },
+      {
+        "title": "Global Networking",
+        "text": "Connect with professionals from around the world and build a vast network. Exchange ideas, share experiences, and create meaningful connections that can open doors to future collaborations and career growth."
+      },
+      {
+        "title": "Cultural Diversity",
+        "text": "Experience the richness of working with a global team. Collaborate with professionals from different backgrounds, cultures, and perspectives, fostering creativity, innovation, and personal growth."
+      },
+      {
+        "title": "Travel Opportunities",
+        "text": "Embark on exciting journeys and visit different locations as part of your job. Engage in on-site collaborations, attend conferences, or simply enjoy the experience of working in diverse environments."
+      },
+      {
+        "title": "Competitive Compensation",
+        "text": "Benefit from a competitive compensation package that recognizes your skills and contributions. Enjoy the perks of a global company that values your expertise and rewards you accordingly."
+      }
+    ]
+  },
+
+  "offices": {
+    "section": "Our Offices",
+    "title": "Discover Our Global Network of Offices",
+    "text": "Experience our expansive network of offices across the world, connecting you to our exceptional services wherever you are.",
+    "offices": [
+      {
+        "city": "San Francisco",
+        "address": "123 Main Street, Suite 200",
+        "number": "(555) 123-4567"
+      },
+      {
+        "city": "New Mexico",
+        "address": "789 Canyon Road",
+        "number": "(555) 555-1234"
+      },
+      {
+        "city": "London",
+        "address": "789 Oak Street, 4th Floor, Suite 402",
+        "number": "+44 20 1234 5678"
+      }
+    ]
+  },
+
+  "careers": {
+    "section": "Careers",
+    "title": "New job opportunities",
+    "text": "Browse through vacancies. internships and job postings at FutureSphere",
+    "careers": [
+      {
+        "role": "Product Manager",
+        "time": "Full Time",
+        "description": "FutureSphere is in need of a talented Product Designer with more than 3 years of past experience in the tech sector."
+      },
+      {
+        "role": "Human Resources",
+        "time": "Full Time",
+        "description": "FutureSphere is in need of a talented Product Designer with more than 3 years of past experience in the tech sector."
+      },
+      {
+        "role": "UI/UX Designer",
+        "time": "Full Time",
+        "description": "FutureSphere is in need of a talented Product Designer with more than 3 years of past experience in the tech sector."
+      }
+    ]
+  }
 }

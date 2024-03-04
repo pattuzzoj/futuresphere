@@ -2,7 +2,7 @@ import Icon from "./icon";
 import List from "./list";
 import Button from "./button";
 import { Accordion, Dropdown, Slide } from "./widgets";
-import { Title, Text, A } from "./typography";
+import { Title, Text, Link } from "./typography";
 import Card from "./card";
 
 export {
@@ -14,6 +14,6 @@ export {
   Slide,
   Title,
   Text,
-  A,
+  Link,
   Card,
 };

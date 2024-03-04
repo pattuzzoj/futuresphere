@@ -42,7 +42,7 @@ body {
 }
 
 html {
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: clamp(10px, 2vw, 15px);
 }
 
 h1, h2, h3, h4, h5, h6 {

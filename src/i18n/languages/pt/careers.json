@@ -1,9 +1,87 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Junte-se à Nossa Equipe e Molde o Futuro",
+    "keywords": "junte-se, equipe, molde, futuro, design web, remoto, presencial, criatividade, colaboração, global, ambiente de trabalho flexível, desenvolvimento profissional, networking global, diversidade cultural, oportunidades de viagem, remuneração competitiva",
+    "description": "Procurando uma oportunidade para mostrar suas habilidades de design web? Junte-se à nossa equipe de designers talentosos, tanto remotamente quanto presencialmente, e dê vida à sua criatividade. Colabore com um grupo dinâmico, crie sites deslumbrantes e faça um impacto duradouro no mundo do design, não importa onde você esteja."
   },
-  "title": "",
-  "subtitle": ""
+  "title": "Junte-se à Nossa Equipe e Molde o Futuro",
+  "text": "Procurando uma oportunidade para mostrar suas habilidades de design web? Junte-se à nossa equipe de designers talentosos, tanto remotamente quanto presencialmente, e dê vida à sua criatividade. Colabore com um grupo dinâmico, crie sites deslumbrantes e faça um impacto duradouro no mundo do design, não importa onde você esteja.",
+  
+  "perks": {
+    "section": "Benefícios",
+    "title": "Benefícios Que Ultrassam Fronteiras",
+    "text": "Experimente um mundo de benefícios com nossa presença global. Desfrute de ambientes de trabalho flexíveis, diversidade cultural, oportunidades de desenvolvimento profissional, aventuras de viagem, networking global e remuneração competitiva.",
+    "perks": [
+      {
+        "title": "Ambiente de Trabalho Flexível",
+        "text": "Desfrute da liberdade de trabalhar de qualquer lugar do mundo, seja no conforto do seu escritório em casa ou na emoção de uma nova cidade. Abraçe um equilíbrio entre vida pessoal e profissional que atenda às suas necessidades."
+      },
+      {
+        "title": "Desenvolvimento Profissional",
+        "text": "Acesse uma ampla variedade de oportunidades de aprendizado e desenvolvimento. De programas de treinamento a conferências, aprimore suas habilidades e expanda seu conhecimento para se manter à frente na indústria em constante evolução."
+      },
+      {
+        "title": "Networking Global",
+        "text": "Conecte-se com profissionais de todo o mundo e construa uma vasta rede. Troque ideias, compartilhe experiências e crie conexões significativas que possam abrir portas para futuras colaborações e crescimento profissional."
+      },
+      {
+        "title": "Diversidade Cultural",
+        "text": "Experimente a riqueza de trabalhar com uma equipe global. Colabore com profissionais de diferentes origens, culturas e perspectivas, fomentando criatividade, inovação e crescimento pessoal."
+      },
+      {
+        "title": "Oportunidades de Viagem",
+        "text": "Embarque em jornadas emocionantes e visite diferentes locais como parte do seu trabalho. Participe de colaborações no local, participe de conferências ou simplesmente desfrute da experiência de trabalhar em ambientes diversos."
+      },
+      {
+        "title": "Remuneração Competitiva",
+        "text": "Beneficie-se de um pacote de remuneração competitivo que reconhece suas habilidades e contribuições. Aproveite os benefícios de uma empresa global que valoriza sua experiência e recompensa você de acordo."
+      }
+    ]
+  },
+
+  "offices": {
+    "section": "Nossos Escritórios",
+    "title": "Descubra Nossa Rede Global de Escritórios",
+    "text": "Experimente nossa ampla rede de escritórios em todo o mundo, conectando você aos nossos serviços excepcionais, onde quer que você esteja.",
+    "offices": [
+      {
+        "city": "São Francisco",
+        "address": "123 Main Street, Suite 200",
+        "number": "(555) 123-4567"
+      },
+      {
+        "city": "Novo México",
+        "address": "789 Canyon Road",
+        "number": "(555) 555-1234"
+      },
+      {
+        "city": "Londres",
+        "address": "789 Oak Street, 4º Andar, Sala 402",
+        "number": "+44 20 1234 5678"
+      }
+    ]
+  },
+
+  "careers": {
+    "section": "Carreiras",
+    "title": "Novas oportunidades de emprego",
+    "text": "Navegue por vagas, estágios e ofertas de emprego na FutureSphere",
+    "careers": [
+      {
+        "role": "Gerente de Produto",
+        "time": "Período Integral",
+        "description": "A FutureSphere está precisando de um talentoso Designer de Produto com mais de 3 anos de experiência anterior no setor de tecnologia."
+      },
+      {
+        "role": "Recursos Humanos",
+        "time": "Período Integral",
+        "description": "A FutureSphere está precisando de um talentoso Designer de Produto com mais de 3 anos de experiência anterior no setor de tecnologia."
+      },
+      {
+        "role": "Designer UI/UX",
+        "time": "Período Integral",
+        "description": "A FutureSphere está precisando de um talentoso Designer de Produto com mais de 3 anos de experiência anterior no setor de tecnologia."
+      }
+    ]
+  }
 }

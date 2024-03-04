@@ -1,11 +1,11 @@
 import { useI18n } from "../../../i18n";
-import iconMail from "../../../assets/images/icon-mail.svg";
+import iconMail from "../../../assets/icons/icon-mail.svg";
 
 export default function Aside() {
   const t = useI18n("global");
 
   return (
-    <aside class="flex flex-col items-center justify-center gap-4 rounded-3xl bg-aside bg-cover p-1 py-8 text-center">
+    <aside class="flex flex-col items-center justify-center gap-4 rounded-3xl bg-aside bg-cover w-100 p-2 py-10 text-center">
       <div class="flex w-100 max-w-2xl flex-col items-center justify-center gap-3">
         <img class="size-4" src={iconMail} alt="" />
         <h2 class="text-5xl text-white">{t("aside.title")}</h2>

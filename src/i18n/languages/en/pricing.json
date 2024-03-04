@@ -1,9 +1,32 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Transparent Pricing for Exceptional Value",
+    "keywords": "pricing, transparent pricing, value, plans, services, features, basic, business, enterprise, month, startups, responsive website design, SEO optimization, customer support, unlimited bandwidth, custom domain, SSL certificate, analytics, e-commerce integration",
+    "description": "Find the perfect plan for your needs with our straightforward pricing options. Discover competitive rates and unlock the exceptional value we offer for our top-notch services."
   },
-  "title": "",
-  "subtitle": ""
+  "title": "Transparent Pricing for Exceptional Value",
+  "text": "Find the perfect plan for your needs with our straightforward pricing options. Discover competitive rates and unlock the exceptional value we offer for our top-notch services.",
+  "plans": {
+    "basic": "Basic Plan",
+    "business": "Business Plan",
+    "enterprise": "Enterprise Plan",
+    "period": "month",
+    "text": "Great fit for the startups",
+    "button": "Get Started",
+    "recommended": "Recommended",
+    "infrastructure": {
+      "design": "Responsive Website Design",
+      "seo": "Basic SEO Optimization",
+      "support": "24/7 Customer Support"
+    },
+    "features": {
+      "title": "Features",
+      "bandwidth": "Unlimited Bandwidth",
+      "domain": "Custom Domain",
+      "certificate": "Secure SSL Certificate",
+      "support": "Priority Customer Support",
+      "reporting": "Advanced Analytics and Reporting",
+      "integration": "E-commerce Integration"
+    }
+  }
 }

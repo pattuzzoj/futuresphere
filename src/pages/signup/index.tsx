@@ -6,7 +6,6 @@ export default function SignUp() {
     <>
       <Header />
       <main>
-        
       </main>
       <Footer />
     </>

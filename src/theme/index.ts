@@ -14,7 +14,7 @@ const defaultTheme = () => {
   }
 }
 
-const [theme, setTheme] = createSignal(defaultTheme());
+const [theme, setTheme] = createSignal<Theme>(defaultTheme());
 HTML.setAttribute("data-theme", theme());
 
 createEffect(() => {

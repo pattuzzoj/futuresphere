@@ -1,5 +1,8 @@
 import { Switch, Match } from 'solid-js';
 import { Title, Text } from '../typography';
+import { useI18n } from '../../../i18n';
+
+const t = useI18n("global");
 
 interface Props {
   type: "info" | "blog" | "description" | "office";
@@ -15,7 +18,7 @@ function InfoCard(props: Props) {
   return (
     <div class="flex flex-col items-center gap-1.25 max-w-18">
       <img class="size-2" src={props.thumbnail} alt="" loading='lazy' />
-      <Title level="3">{props.title}</Title>
+      <Title level="5">{props.title}</Title>
       <Text>{props.text}</Text>
     </div>
   )
@@ -23,11 +26,12 @@ function InfoCard(props: Props) {
 
 function BlogCard(props: Props) {
   return (
-    <div class="flex flex-col items-center gap-1.25">
+    <div class="flex flex-col items-center text-start gap-1.25">
       <img class="size-100 rounded-2xl" src={props.thumbnail} alt="" loading='lazy' />
       <span class="self-start bg-purple-light rounded-full p-0.5 text-white">{props.category}</span>
-      <Title level="3">{props.title}</Title>
+      <Title level="5">{props.title}</Title>
       <Text>{props.text}</Text>
+      <span class="self-end dark:text-white"><a class="underline underline-offset-4 decoration-purple hover:no-underline hover:bg-purple rounded-full p-0.375 hover:text-white" href="">{t("ui.more")}</a></span>
     </div>
   )
 }
@@ -35,7 +39,7 @@ function BlogCard(props: Props) {
 function OfficeCard(props: Props) {
   return (
     <div class="flex flex-col gap-0.5 text-start">
-      <img src={props.thumbnail} alt="" />
+      <img class="rounded-2xl" src={props.thumbnail} alt="" />
       <div>
         <span class="text-purple">{props.city}</span>
         <Text>{props.text}</Text>
@@ -50,7 +54,7 @@ function DescriptionCard(props: Props) {
     <div class="grid md:grid-cols-2 gap-1 lg:gap-1.5 items-center max-w-[1000px] text-start">
       <img class="h-100 object-cover rounded-3xl" src={props.thumbnail} alt="" loading='lazy' />
       <div class="flex flex-col justify-between gap-1">
-        <Title level="3">{props.title}</Title>
+        <Title level="5">{props.title}</Title>
         <Text class="text-xl">{props.text}</Text>
       </div>
     </div>
