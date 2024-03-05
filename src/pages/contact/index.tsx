@@ -34,8 +34,7 @@ export default function Contact() {
   }
 
   const [contactForm, {Form, Field}] = createForm<contactForm>({
-    revalidateOn: "submit",
-    validateOn: "submit"
+    revalidateOn: "input"
   });
 
   const officesImages = [san_francisco, new_mexico, london];
@@ -64,7 +63,7 @@ export default function Contact() {
                   >
                     {(field, props) => (
                       <div class="relative">
-                        <input {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple p-0.5 placeholder-transparent peer" type="text" placeholder={t("form.first name.text")}/>
+                        <input {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple p-0.5 placeholder-transparent caret-purple peer" type="text" placeholder={t("form.first name.text")}/>
                         <label class="absolute left-0 -top-50 scale-90 dark:text-white peer-placeholder-shown:left-0.75 peer-placeholder-shown:top-50 peer-placeholder-shown:-translate-y-50 peer-placeholder-shown:font-medium peer-placeholder-shown:text-black peer-placeholder-shown:scale-100 transition-all">{t("form.first name.text")}</label>
                         {field.error && <span class="absolute left-0 top-100 text-sm text-red-600">{field.error == "required" ? t("form.first name.required") : t("form.first name.error")}</span>}
                       </div>
@@ -79,7 +78,7 @@ export default function Contact() {
                   >
                     {(field, props) => (
                       <div class="relative">
-                        <input {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple p-0.5 placeholder-transparent peer" type="text" placeholder={t("form.last name.text")}/>
+                        <input {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple p-0.5 placeholder-transparent caret-purple peer" type="text" placeholder={t("form.last name.text")}/>
                         <label class="absolute left-0 -top-50 scale-90 dark:text-white peer-placeholder-shown:left-0.75 peer-placeholder-shown:top-50 peer-placeholder-shown:-translate-y-50 peer-placeholder-shown:font-medium peer-placeholder-shown:text-black peer-placeholder-shown:scale-100 transition-all">{t("form.last name.text")}</label>
                         {field.error && <span class="absolute left-0 top-100 text-sm text-red-600">{field.error == "required" ? t("form.last name.required") : t("form.last name.error")}</span>}
                       </div>
@@ -94,7 +93,7 @@ export default function Contact() {
                   >
                     {(field, props) => (
                       <div class="relative">
-                        <input {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple p-0.5 placeholder-transparent peer" type="email" placeholder={t("form.email.text")} required/>
+                        <input {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple p-0.5 placeholder-transparent caret-purple peer" type="email" placeholder={t("form.email.text")} required/>
                         <label class="absolute left-0 -top-50 scale-90 dark:text-white peer-placeholder-shown:left-0.75 peer-placeholder-shown:top-50 peer-placeholder-shown:-translate-y-50 peer-placeholder-shown:font-medium peer-placeholder-shown:text-black peer-placeholder-shown:scale-100 transition-all">{t("form.email.text")}</label>
                         {field.error && <span class="absolute left-0 top-100 text-sm text-red-600">{field.error == "required" ? t("form.email.required") : t("form.email.error")}</span>}
                       </div>
@@ -109,7 +108,7 @@ export default function Contact() {
                   >
                     {(field, props) => (
                       <div class="relative">
-                        <input {...props}class="w-100 outline-none border-2 rounded-lg focus:border-purple p-0.5 placeholder-transparent peer" type="email" placeholder={t("form.subject.text")} required/>
+                        <input {...props}class="w-100 outline-none border-2 rounded-lg focus:border-purple p-0.5 placeholder-transparent caret-purple peer" type="email" placeholder={t("form.subject.text")} required/>
                         <label class="absolute left-0 -top-50 scale-90 dark:text-white peer-placeholder-shown:left-0.75 peer-placeholder-shown:top-50 peer-placeholder-shown:-translate-y-50 peer-placeholder-shown:font-medium peer-placeholder-shown:text-black peer-placeholder-shown:scale-100 transition-all">{t("form.subject.text")}</label>
                         {field.error && <span class="absolute left-0 top-100 text-sm text-red-600">{field.error == "required" ? t("form.subject.required") : t("form.subject.error")}</span>}
                       </div>
@@ -195,13 +194,13 @@ export default function Contact() {
                 >
                   {(field, props) => (
                     <div class="relative">
-                      <textarea {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple p-0.5 placeholder-transparent peer" rows="5" placeholder={t("form.message.text")} required/>
+                      <textarea {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple p-0.5 placeholder-transparent caret-purple peer" rows="5" placeholder={t("form.message.text")} required/>
                       <label class="absolute left-0 -top-1.25 scale-90 dark:text-white peer-placeholder-shown:left-0.75 peer-placeholder-shown:top-0.5 peer-placeholder-shown:font-medium peer-placeholder-shown:text-black peer-placeholder-shown:scale-100 transition-all">{t("form.message.text")}</label>
                       {field.error && <span class="absolute left-0 top-100 text-sm text-red-600">{field.error == "required" ? t("form.message.required") : t("form.message.error")}</span>}
                     </div>
                   )}
                 </Field>
-                <div class="flex flex-col justify-between lg:flex-row">
+                <div class="flex flex-col justify-between items-start gap-2 lg:flex-row">
                   <Field 
                   name="terms"
                   type="boolean"
@@ -219,7 +218,7 @@ export default function Contact() {
                       </div>
                     )}
                   </Field>
-                  <button class="text-white bg-purple py-0.5 px-2 rounded-full" type="submit">{t("form.submit")}</button>
+                  <button class="w-100 lg:w-auto text-white bg-purple py-0.5 px-2 rounded-full" type="submit">{t("form.submit")}</button>
                 </div>
               </Form>
             </div>
@@ -233,7 +232,7 @@ export default function Contact() {
         </div>
       </Section>
       <Section>
-        <h6 class="text-purple">{t("offices.section")}</h6>
+        <Title level="6" class="text-purple">{t("offices.section")}</Title>
         <Title level={2}>{t("offices.title")}</Title>
         <Text>{t("offices.text")}</Text>
         <div class="grid gap-4 text-start md:grid-cols-2 md:gap-3 lg:grid-cols-3 lg:gap-2">
@@ -251,7 +250,7 @@ export default function Contact() {
         </div>
       </Section>
       <Section>
-        <h6 class="text-purple">{t("faq.section")}</h6>
+        <Title level="6" class="text-purple">{t("faq.section")}</Title>
         <Title level="2">{t("faq.title")}</Title>
         <Text>{t("faq.text")} futuresphere@gmail.com</Text>
         <br />
@@ -259,7 +258,7 @@ export default function Contact() {
           <For each={t("faq.data")}>
             {(faq, _index) => (
               <div class="text-start">
-                <h6 class="text-purple">{faq.title}</h6>
+                <Title level="6" class="text-purple">{faq.title}</Title>
                 <br />
                 <Text>{faq.text}</Text>
               </div>

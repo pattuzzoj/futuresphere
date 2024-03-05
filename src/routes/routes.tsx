@@ -6,9 +6,9 @@ const Blogs = lazy(() => import('../pages/blogs'));
 const Careers = lazy(() => import('../pages/careers'));
 const Contact = lazy(() => import('../pages/contact'));
 const Features = lazy(() => import('../pages/features'));
+const Pricing = lazy(() => import('../pages/pricing'));
 const Login = lazy(() => import('../pages/login'));
 const SignUp = lazy(() => import('../pages/signup'));
-const Pricing = lazy(() => import('../pages/pricing'));
 const NotFound = lazy(() => import('../pages/404'));
 
 export const routes = [
@@ -41,7 +41,7 @@ export const routes = [
     component: Login,
   },
   {
-    path: '/sign-up',
+    path: '/signup',
     component: SignUp,
   },
   {

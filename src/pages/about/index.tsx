@@ -42,7 +42,7 @@ export default function About() {
           <img src={hero} alt="" />
         </Section>
         <Section>
-          <h6 class="text-purple">{t("story.section")}</h6>
+          <Title level="6">{t("story.section")}</Title>
           <div class="flex flex-col md:flex-row">
             <Text>{t("story.stories")[0].text}</Text>
             <img src="" alt="" />
@@ -53,7 +53,7 @@ export default function About() {
           </div>
         </Section>
         <Section>
-          <h6 class="text-purple">{t("clients.section")}</h6>
+          <Title level="6">{t("clients.section")}</Title>
           <Title level={2}>{t("clients.title")}</Title>
           <Text>{t("clients.text")}</Text>
           <div class="flex flex-wrap justify-center gap-4 mt-1.5">
@@ -76,7 +76,7 @@ export default function About() {
           </div>
         </Section>
         <Section>
-          <h6 class="text-purple">{t("values.section")}</h6>
+          <Title level="6">{t("values.section")}</Title>
           <Title level={2}>{t("values.title")}</Title>
           <Text>{t("values.text")}</Text>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center items-start gap-3 mt-2">
@@ -86,7 +86,7 @@ export default function About() {
           </div>
         </Section>
         {/* <Section>
-          <h6 class="text-purple">{t("team.section")}</h6>
+          <Title level="6">{t("team.section")}</Title>
           <Title level={2}>{t("team.title")}</Title>
           <Text>{t("team.text")}</Text>
           <br />
@@ -119,7 +119,7 @@ export default function About() {
           </div>
         </Section> */}
         <Section>
-          <h6 class="text-purple">{t("offices.section")}</h6>
+          <Title level="6">{t("offices.section")}</Title>
           <Title level={2}>{t("offices.title")}</Title>
           <Text>{t("offices.text")}</Text>
           <div class="grid gap-4 text-start md:grid-cols-2 md:gap-3 lg:grid-cols-3 lg:gap-2">
@@ -141,7 +141,7 @@ export default function About() {
           </span>
         </Section>
         <Section>
-          <h6 class="text-purple">{t("careers.section")}</h6>
+          <Title level="6">{t("careers.section")}</Title>
           <Title level={2}>{t("careers.title")}</Title>
           <Text>{t("careers.text")}</Text>
           <br />

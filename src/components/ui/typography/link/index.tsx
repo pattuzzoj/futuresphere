@@ -9,7 +9,13 @@ interface Props extends JSX.AnchorHTMLAttributes<HTMLAnchorElement> {
 
 function ContactLink(props: Props) {
   return (
-    <a title={props.title} class="cursor-pointer rounded-full border-2 bg-purple px-1.25 py-0.375 text-white border-purple hover:bg-transparent hover:text-black dark:hover:bg-transparent dark:hover:text-white" href="contact">{t("ui.contact")}</a>
+    <a title={props.title} class="
+    cursor-pointer
+    border-2 border-purple rounded-full
+    px-1.25 py-0.375
+    bg-purple dark:hover:bg-transparent hover:bg-transparent
+    dark:hover:text-white hover:text-black"
+    href="contact">{t("ui.contact")}</a>
   )
 }
 
@@ -17,7 +23,11 @@ function SignupLink(props: Props) {
   return (
     <a
       title={props.title}
-      class="cursor-pointer rounded-full border-2 bg-dark px-1.25 py-0.375 text-white border-dark hover:bg-transparent hover:text-black dark:border-white dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:text-white" href="/signup"
+      class="cursor-pointer
+       border-2 border-dark dark:border-white rounded-full
+       px-1.25 py-0.375
+       dark:text-black hover:text-black dark:hover:text-white
+       bg-dark hover:bg-transparent dark:bg-white dark:hover:bg-transparent" href="/signup"
     >
       {t("ui.signup")}
     </a>
@@ -34,7 +44,7 @@ function ViewLink(props: Props) {
 
 export default function Link(props: Props) {
   return (
-  <Switch fallback={<button class={props.class} title={props.title}>{props.children}</button>}>
+  <Switch>
     <Match when={props.type == "contact"}>
       <ContactLink {...props}/>
     </Match>

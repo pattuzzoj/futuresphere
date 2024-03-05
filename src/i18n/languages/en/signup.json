@@ -7,15 +7,25 @@
   "title": "Sign Up Request",
   "subtitle": "Submit your sign in request and we will reach back asap.",
   "form": {
-    "name": "Name",
-    "email": "email",
-    "number": "Phone Number",
-    "teste": "Already have an account?",
-    "submit": "Get started"
-  },
-  "succeded": {
-    "title": "Your sign up request was submitted successfully.",
-    "subtitle": "Our team will reach out to you soon.",
-    "back": "Back to Home"
+    "username": {
+      "text": "Username",
+      "required": "This field is required",
+      "error": "Please enter a valid username"
+    },
+    "email": {
+      "text": "Email",
+      "required": "This field is required",
+      "error": "Please enter a valid email address (example@example.com)"
+    },
+    "password": {
+      "text": "Password",
+      "required": "This field is required",
+      "error": ""
+    },
+    "terms": {
+      "text": "I agree with terms of usage and privacy policy.",
+      "required": "You must agree to the terms"
+    },
+    "submit": "Register"
   }
 }

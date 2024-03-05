@@ -31,7 +31,7 @@ function BlogCard(props: Props) {
       <span class="self-start bg-purple-light rounded-full p-0.5 text-white">{props.category}</span>
       <Title level="5">{props.title}</Title>
       <Text>{props.text}</Text>
-      <span class="self-end dark:text-white"><a class="underline underline-offset-4 decoration-purple hover:no-underline hover:bg-purple rounded-full p-0.375 hover:text-white" href="">{t("ui.more")}</a></span>
+      <span class="self-end dark:text-white"><a class="underline underline-offset-4 decoration-purple hover:no-underline hover:bg-purple rounded-full p-0.375 hover:text-white" href="/blogs">{t("ui.more")}</a></span>
     </div>
   )
 }

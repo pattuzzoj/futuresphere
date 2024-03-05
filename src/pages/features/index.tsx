@@ -22,7 +22,7 @@ export default function Contact() {
     <Header />
     <Main>
       <div class="flex flex-col text-center gap-1 md:gap-1.25 lg:gap-1.5">
-        <h6 class="text-purple">{t("features.section")}</h6>
+        <Title level="6" class="text-purple">{t("features.section")}</Title>
         <Title level="1">{t("features.title")}</Title>
         <Text>{t("features.text")}</Text>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center items-start gap-3 mt-2">

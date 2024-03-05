@@ -35,17 +35,21 @@ export default function Home() {
     <>
       <MetaData title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")} />
       <Header />
-      <Main class="gap-5 md:gap-6 lg:gap-8">
+      <Main>
         <Section>
-          <Title level="1" class="text-center">
-            {t("title")}
-          </Title>
-          <Text class="text-2xl">{t("text")}</Text>
-          <span class="flex justify-center gap-1">
-            <Link type="signup" />
-            <Link type="contact" />
-          </span>
-          <img class="w-100 rounded-full my-3" src={hero} alt="" loading="lazy" />
+          <div>
+            <Title level="1">
+              {t("title")}
+            </Title>
+            <br />
+            <Text class="text-xl">{t("text")}</Text>
+            <br />
+            <div class="self-center">
+              <Link type="signup" />
+              <Link type="contact" />
+            </div>
+          </div>
+          <img class="w-100 rounded-full" src={hero} alt="" loading="lazy" />
           <div class="flex flex-col justify-evenly gap-1 md:flex-row">
             <For each={t("stats")}>
               {(data, _index) => (
@@ -59,7 +63,7 @@ export default function Home() {
           </div>
         </Section>
         <Section>
-          <h6 class="text-purple">{t("features.section")}</h6>
+          <Title level="6" class="text-purple"><span class="text-purple">{t("features.section")}</span></Title>
           <Title class="" level="2">
             {t("features.title")}
           </Title>
@@ -75,7 +79,7 @@ export default function Home() {
           </span>
         </Section>
         <Section>
-          <h6 class="text-purple">{t("our mission statement.section")}</h6>
+          <Title level="6" class="text-purple">{t("our mission statement.section")}</Title>
           <div class="flex justify-center">
             <Card
               type="description"
@@ -86,7 +90,7 @@ export default function Home() {
           </div>
         </Section>
         <Section>
-          <h6 class="text-purple">{t("our clients.section")}</h6>
+          <Title level="6" class="text-purple">{t("our clients.section")}</Title>
           <Title class="" level="2">
             {t("our clients.title")}
           </Title>
@@ -114,24 +118,24 @@ export default function Home() {
           <Slide type="item" control="buttons" position="start">
             <div class="grid md:grid-cols-2 gap-1.5 text-start">
               <div class="flex flex-col justify-center gap-1 text-start">
-                <h6 class="text-purple">{t("services.section")}</h6>
-                <Title class="!text-purple" level={3}>{t("services.services")[0].title}</Title>
+                <Title level="6" class="text-purple">{t("services.section")}</Title>
+                <Title level={4}>{t("services.services")[0].title}</Title>
                 <Text>{t("services.services")[0].text}</Text>
               </div>
               <img class="size-100 md:h-24 rounded-3xl object-cover" src={servicesImages[0]} alt="" />
             </div>
             <div class="grid md:grid-cols-2 gap-1.5 text-start">
               <div class="flex flex-col justify-center gap-1 text-start">
-                <h6 class="text-purple">{t("services.section")}</h6>
-                <Title class="!text-purple" level={3}>{t("services.services")[1].title}</Title>
+                <Title level="6" class="text-purple">{t("services.section")}</Title>
+                <Title level={4}>{t("services.services")[1].title}</Title>
                 <Text>{t("services.services")[1].text}</Text>
               </div>
               <img class="size-100 md:h-24 rounded-3xl object-cover" src={servicesImages[1]} alt="" />
             </div>
             <div class="grid md:grid-cols-2 gap-1.5 text-start">
               <div class="flex flex-col justify-center gap-1 text-start">
-                <h6 class="text-purple">{t("services.section")}</h6>
-                <Title class="!text-purple" level={3}>{t("services.services")[2].title}</Title>
+                <Title level="6" class="text-purple">{t("services.section")}</Title>
+                <Title level={4}>{t("services.services")[2].title}</Title>
                 <Text>{t("services.services")[2].text}</Text>
               </div>
               <img class="size-100 md:h-24 rounded-3xl object-cover" src={servicesImages[2]} alt="" />
@@ -139,7 +143,7 @@ export default function Home() {
           </Slide>
         </Section>
         <Section>
-          <h6 class="text-purple">{t("testimonials.section")}</h6>
+          <Title level="6" class="text-purple">{t("testimonials.section")}</Title>
           <Title level="2">{t("testimonials.title")}</Title>
           <Slide type="item" control="buttons" position="end">
             <div class="grid md:grid-cols-2 gap-1.5 text-start">
@@ -175,7 +179,7 @@ export default function Home() {
           </Slide>
         </Section>
         <Section>
-          <h6 class="text-purple">{t("blogs.section")}</h6>
+          <Title level="6" class="text-purple">{t("blogs.section")}</Title>
           <Title class="" level="2">
             {t("features.title")}
           </Title>

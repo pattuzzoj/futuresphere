@@ -1,6 +1,6 @@
 import { JSX } from 'solid-js';
 import { BsTwitter, BsFacebook, BsLinkedin } from 'solid-icons/bs';
-import { FiSun, FiMoon } from 'solid-icons/fi';
+import { FiSun, FiMoon, FiX } from 'solid-icons/fi';
 import { RiSystemMenu2Line } from 'solid-icons/ri';
 import { FaSolidCircleCheck, FaSolidCircleXmark } from 'solid-icons/fa'
 
@@ -12,6 +12,7 @@ interface Props extends JSX.HTMLAttributes<HTMLSpanElement> {
   | "BsLinkedin"
   | "FiSun"
   | "FiMoon"
+  | "FiX"
   | "RiSystemMenu2Line"
   | "FaSolidCircleCheck"
   | "FaSolidCircleXmark"
@@ -24,6 +25,7 @@ export default function Icon(props: Props) {
     BsLinkedin,
     FiSun,
     FiMoon,
+    FiX,
     RiSystemMenu2Line,
     FaSolidCircleCheck,
     FaSolidCircleXmark
