@@ -1,11 +1,10 @@
-// I18nContextProvider.jsx
-import { createSignal, createEffect, createMemo } from 'solid-js';
-import * as i18n from '@solid-primitives/i18n';
-import { dictionaries } from './languages';
-import { HTML } from '../utils/constants';
-import portuguese from '../assets/icons/flags/brazil.svg';
-import english from '../assets/icons/flags/english.svg';
-import spanish from '../assets/icons/flags/spain.svg';
+import { createSignal, createEffect, createMemo } from "solid-js";
+import * as i18n from "@solid-primitives/i18n";
+import { dictionaries } from "./languages";
+import { HTML } from "../utils/constants";
+import portuguese from "../assets/icons/flags/brazil.svg";
+import english from "../assets/icons/flags/english.svg";
+import spanish from "../assets/icons/flags/spain.svg";
 
 type Locale = "en" | "es" | "pt";
 
@@ -13,7 +12,7 @@ const flags = {
   en: english,
   es: spanish,
   pt: portuguese,
-}
+};
 
 const defaultLang: Locale = "pt";
 const storedLang = (localStorage.getItem("lang") as Locale) ?? defaultLang;
@@ -28,8 +27,8 @@ const [flag, setFlag] = createSignal(flags[language()]);
 function langUpdateListener(event: StorageEvent) {
   if (event.key === "lang" && event.newValue !== null) {
     const newLanguage = event.newValue as Locale;
-      setLanguage(newLanguage);
-      setFlag(flags[newLanguage]);
+    setLanguage(newLanguage);
+    setFlag(flags[newLanguage]);
   }
 }
 
@@ -47,4 +46,4 @@ export function useI18n(scope: any) {
   return i18n.scopedTranslator(translate, scope);
 }
 
-export {flag, setFlag, flags};
+export { flag, setFlag, flags };

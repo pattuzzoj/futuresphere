@@ -6,7 +6,7 @@ import { useI18n, setLocaleI18n, flag, setFlag, flags } from "../../../i18n";
 import Logo from "../../ui/logo";
 
 export default function Header() {
-  const [menuIsOpen, setMenuIsOpen] = createSignal(true);
+  const [menuIsOpen, setMenuIsOpen] = createSignal(false);
   const [menuLanguageisOpen, setMenuLanguageIsOpen] = createSignal(false);
 
   const [_language, setLanguage] = setLocaleI18n();

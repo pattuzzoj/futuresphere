@@ -1,21 +1,30 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Registro - FutureSphere",
+    "keywords": "registro, futuresphere, crear cuenta, inscripción",
+    "description": "Regístrese para obtener una cuenta en FutureSphere para acceder a recursos exclusivos y mantenerse actualizado con las últimas tendencias tecnológicas. ¡Regístrese ahora para ser parte de nuestra comunidad!"
   },
   "title": "Registro",
-  "subtitle": "Envía tu solicitud de registro y nos pondremos en contacto lo antes posible.",
   "form": {
-    "name": "Nombre",
-    "email": "Correo Electrónico",
-    "number": "Número de Teléfono",
-    "teste": "¿Ya tienes una cuenta?",
-    "submit": "Empezar"
-  },
-  "succeded": {
-    "title": "Tu solicitud de registro se ha enviado correctamente.",
-    "subtitle": "Nuestro equipo se pondrá en contacto contigo pronto.",
-    "back": "Volver a Inicio"
+    "username": {
+      "text": "Nombre de Usuario",
+      "required": "Este campo es obligatorio",
+      "error": "Por favor, ingrese un nombre de usuario válido"
+    },
+    "email": {
+      "text": "Correo Electrónico",
+      "required": "Este campo es obligatorio",
+      "error": "Por favor, ingrese una dirección de correo electrónico válida (ejemplo@ejemplo.com)"
+    },
+    "password": {
+      "text": "Contraseña",
+      "required": "Este campo es obligatorio",
+      "error": "Su contraseña debe tener al menos 8 caracteres y incluir una combinación de letras, números y caracteres especiales."
+    },
+    "terms": {
+      "text": "Acepto los términos de uso y la política de privacidad.",
+      "required": "Debe aceptar los términos"
+    },
+    "submit": "Registrarse"
   }
 }

@@ -1,21 +1,30 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Cadastro - FutureSphere",
+    "keywords": "cadastro, futuresphere, criar conta, registro",
+    "description": "Cadastre-se para uma conta na FutureSphere para acessar recursos exclusivos e ficar atualizado com as últimas tendências tecnológicas. Registre-se agora para fazer parte da nossa comunidade!"
   },
   "title": "Cadastro",
-  "subtitle": "Envie seu pedido de cadastro e entraremos em contato o mais rápido possível.",
   "form": {
-    "name": "Nome",
-    "email": "E-mail",
-    "number": "Número de Telefone",
-    "teste": "Já tem uma conta?",
-    "submit": "Começar"
-  },
-  "succeded": {
-    "title": "Seu pedido de cadastro foi enviado com sucesso.",
-    "subtitle": "Nossa equipe entrará em contato em breve.",
-    "back": "Voltar para Página Inicial"
+    "username": {
+      "text": "Nome de Usuário",
+      "required": "Este campo é obrigatório",
+      "error": "Por favor, insira um nome de usuário válido"
+    },
+    "email": {
+      "text": "Email",
+      "required": "Este campo é obrigatório",
+      "error": "Por favor, insira um endereço de email válido (exemplo@example.com)"
+    },
+    "password": {
+      "text": "Senha",
+      "required": "Este campo é obrigatório",
+      "error": "Sua senha deve ter no mínimo 8 caracteres e incluir uma combinação de letras, números e caracteres especiais."
+    },
+    "terms": {
+      "text": "Concordo com os termos de uso e política de privacidade.",
+      "required": "Você deve concordar com os termos"
+    },
+    "submit": "Cadastrar"
   }
 }

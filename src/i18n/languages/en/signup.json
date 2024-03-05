@@ -1,11 +1,10 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Sign Up - FutureSphere",
+    "keywords": "signup, futuresphere, create account, registration",
+    "description": "Register for a FutureSphere account to access exclusive features and stay updated with the latest technology trends. Sign up now to join our community!"
   },
-  "title": "Sign Up Request",
-  "subtitle": "Submit your sign in request and we will reach back asap.",
+  "title": "Sign Up",
   "form": {
     "username": {
       "text": "Username",
@@ -20,7 +19,7 @@
     "password": {
       "text": "Password",
       "required": "This field is required",
-      "error": ""
+      "error": "Your password must be at least 8 characters long and include a combination of letters, numbers, and special characters."
     },
     "terms": {
       "text": "I agree with terms of usage and privacy policy.",
