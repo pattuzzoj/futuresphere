@@ -117,9 +117,9 @@ export default function Header() {
 
       <div class={`
       ${menuIsOpen() ? "block" : "hidden"}
-      absolute top-100 right-0 z-1 w-100
+      absolute top-[110%] right-0 z-1 w-100
       py-2 px-1 rounded-2xl
-      bg-white dark:bg-dark
+      bg-dark dark:bg-white
       `}>
         <div class="flex flex-col gap-1">
           <div class="flex flex-col gap-2">
@@ -133,7 +133,7 @@ export default function Header() {
                     <img class="size-2.5" src={flag()} alt="" />
                   </button>
                   <div
-                    class={`${menuLanguageisOpen() ? "flex" : "hidden"} absolute left-50 -translate-x-50 top-100 w-100 flex-col items-center gap-0 rounded-lg bg-dark p-0.25 dark:bg-white`}
+                    class={`${menuLanguageisOpen() ? "flex" : "hidden"} absolute left-50 -translate-x-50 top-100 w-100 flex-col items-center gap-0 rounded-lg p-0.25 bg-white dark:bg-dark`}
                   >
                     <button
                       title="Portuguese"
@@ -173,9 +173,9 @@ export default function Header() {
               p-0.375 px-0.75
               dark:rounded-full
               text-3xl
-              text-black dark:text-white
+              text-white dark:text-black
               " href="/">
-                <Logo class="size-2.5 fill-black dark:fill-white" />
+                <Logo class="size-2.5 fill-white dark:fill-black" />
                 FutureSphere
               </a>
               <Show
@@ -189,7 +189,7 @@ export default function Header() {
                 </button>
               </Show>
             </span>
-            <nav class="flex flex-col justify-center items-center gap-1.25 text-black dark:text-white">
+            <nav class="flex flex-col justify-center items-center gap-1.25 text-white dark:text-black">
               <A class="text-xl hover:text-purple" activeClass="text-purple" href="/about" end>{t("header.menu.about")}</A>
               <A class="text-xl hover:text-purple" activeClass="text-purple" href="/careers" end>{t("header.menu.careers")}</A>
               <A class="text-xl hover:text-purple" activeClass="text-purple" href="/blogs" end>{t("header.menu.blogs")}</A>
