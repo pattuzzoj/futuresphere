@@ -94,7 +94,7 @@ export default function Header() {
       h-100 w-100 p-1
       absolute left-0 top-0 z-1
       bg-dark
-      `}>
+      `}> 
         <span class="flex justify-between">
           <Show
             when={theme() == "light"} fallback={
