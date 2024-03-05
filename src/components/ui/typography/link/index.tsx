@@ -13,6 +13,7 @@ function ContactLink(props: Props) {
     cursor-pointer
     border-2 border-purple rounded-full
     px-1.25 py-0.375
+    text-white
     bg-purple dark:hover:bg-transparent hover:bg-transparent
     dark:hover:text-white hover:text-black"
     href="contact">{t("ui.contact")}</a>
@@ -26,6 +27,7 @@ function SignupLink(props: Props) {
       class="cursor-pointer
        border-2 border-dark dark:border-white rounded-full
        px-1.25 py-0.375
+       text-white
        dark:text-black hover:text-black dark:hover:text-white
        bg-dark hover:bg-transparent dark:bg-white dark:hover:bg-transparent" href="/signup"
     >

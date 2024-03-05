@@ -33,7 +33,7 @@ export default function Header() {
         </div>
         <A class="hidden rounded-full bg-purple p-0.375 px-1.25 text-white md:block hover:bg-purple-light" href="/contact">{t("header.menu.contact")}</A>
       </header>
-      <span class="ml-1 flex w-9 items-center justify-evenly rounded-full bg-dark dark:bg-white md:ml-1.5 relative">
+      <span class="ml-1 flex w-4 md:w-9 items-center justify-evenly rounded-full md:rounded-full bg-dark dark:bg-white md:ml-1.5 relative">
         <span class="flex items-center">
           <button
             class=""
@@ -42,7 +42,7 @@ export default function Header() {
             <img class="size-2" src={flag()} alt="" />
           </button>
           <div
-            class={`${menuLanguageisOpen() ? "flex" : "hidden"} absolute left-0.875 top-3.5 w-3 flex-col items-center gap-0 rounded-lg bg-dark p-0.5 dark:bg-white`}
+            class={`${menuLanguageisOpen() ? "flex" : "hidden"} absolute left-0.25 md:left-0.875 top-3.5 w-3 flex-col items-center gap-0 rounded-lg bg-dark p-0.5 dark:bg-white`}
           >
             <button
               title="Portuguese"
@@ -90,40 +90,38 @@ export default function Header() {
 
       <div class={`
       ${menuIsOpen() ? "flex" : "hidden"}
-      flex-col gap-8
-      h-100 w-100 p-1
-      absolute left-0 top-0 z-1
+      flex-col gap-2
+      h-100 w-50 p-1
+      fixed top-0 right-0 z-2
       bg-dark
       `}> 
         <span class="flex justify-between">
           <Show
             when={theme() == "light"} fallback={
               <button title="dark" class="inline-block rounded-full dark:text-black" onClick={() => setTheme("light")}>
-                <Icon class="inline-block" color="fill-yellow-500  stroke-yellow-500 size-2" name="FiMoon"/>
+                <Icon class="inline-block" color="fill-yellow-500  stroke-yellow-500 size-3" name="FiMoon"/>
               </button>
             }>
             <button title="light" class="inline-block rounded-full dark:text-black" onClick={() => setTheme("dark")}>
-              <Icon class="inline-block" color="fill-yellow-500 stroke-yellow-500 size-2" name="FiSun"/>
+              <Icon class="inline-block" color="fill-yellow-500 stroke-yellow-500 size-3" name="FiSun"/>
             </button>
           </Show>
 
           <button class="mr-1 md:hidden" onClick={() => setMenuIsOpen(!menuIsOpen())}>
-            <Icon color="text-purple size-2" name="FiX" />
+            <Icon color="text-purple size-3" name="FiX" />
           </button>
         </span>
-        <a class="flex self-center rounded-full text-white text-2xl" href="/">
-          <Logo class="size-2 fill-white" />
+        <a class="flex items-center self-center rounded-full text-white text-4xl" href="/">
+          <Logo class="size-3 fill-white" />
           FutureSphere
         </a>
-        <div class="h-80 text-white">
-          <nav class={`flex flex-col gap-1 text-center text-xl`}>
-            <A class="hover:text-purple" activeClass="text-purple" href="/about" end>{t("header.menu.about")}</A>
-            <A class="hover:text-purple" activeClass="text-purple" href="/careers" end>{t("header.menu.careers")}</A>
-            <A class="hover:text-purple" activeClass="text-purple" href="/blogs" end>{t("header.menu.blogs")}</A>
-            <A class="hover:text-purple" activeClass="text-purple" href="/pricing" end>{t("header.menu.pricing")}</A>
-            <A class="hover:text-purple md:hidden" activeClass="text-purple" href="/contact" end>{t("header.menu.contact")}</A>
-          </nav>
-        </div>
+        <nav class={`flex flex-col justify-center gap-2 h-100 text-center text-xl`}>
+          <A class="hover:text-purple" activeClass="text-purple" href="/about" end>{t("header.menu.about")}</A>
+          <A class="hover:text-purple" activeClass="text-purple" href="/careers" end>{t("header.menu.careers")}</A>
+          <A class="hover:text-purple" activeClass="text-purple" href="/blogs" end>{t("header.menu.blogs")}</A>
+          <A class="hover:text-purple" activeClass="text-purple" href="/pricing" end>{t("header.menu.pricing")}</A>
+          <A class="hover:text-purple md:hidden" activeClass="text-purple" href="/contact" end>{t("header.menu.contact")}</A>
+        </nav>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ function InfoCard(props: Props) {
 
 function BlogCard(props: Props) {
   return (
-    <div class="flex flex-col items-center text-start gap-1.25">
+    <div class="flex flex-col text-start gap-1.25">
       <img class="size-100 rounded-2xl" src={props.thumbnail} alt="" loading='lazy' />
       <span class="self-start bg-purple-light rounded-full p-0.5 text-white">{props.category}</span>
       <Title level="5">{props.title}</Title>
