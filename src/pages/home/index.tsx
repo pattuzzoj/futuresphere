@@ -44,7 +44,7 @@ export default function Home() {
             <br />
             <Text class="text-xl">{t("text")}</Text>
             <br />
-            <div class="self-center">
+            <div class="flex justify-center gap-1">
               <Link type="signup" />
               <Link type="contact" />
             </div>
