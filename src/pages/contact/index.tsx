@@ -194,7 +194,7 @@ export default function Contact() {
                 >
                   {(field, props) => (
                     <div class="relative">
-                      <textarea {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple border-gray-400 p-0.5 placeholder-transparent caret-purple peer" r text-blackows="5" placeholder={t("form.message.text")} required/>
+                      <textarea {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple border-gray-400 p-0.5 placeholder-transparent caret-purple peer" text-blackows="5" placeholder={t("form.message.text")} required/>
                       <label class="absolute left-0 -top-1.25 scale-90 dark:text-white peer-placeholder-shown:left-0.75 peer-placeholder-shown:top-0.5 peer-placeholder-shown:font-medium peer-placeholder-shown:text-black peer-placeholder-shown:scale-100 transition-all">{t("form.message.text")}</label>
                       {field.error && <span class="absolute left-0 top-100 text-sm text-red-600">{field.error == "required" ? t("form.message.required") : t("form.message.error")}</span>}
                     </div>
