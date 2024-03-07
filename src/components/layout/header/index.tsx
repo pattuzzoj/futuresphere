@@ -202,6 +202,7 @@ export default function Header() {
               <A class="text-xl hover:text-purple" activeClass="text-purple" href="/careers" end>{t("header.menu.careers")}</A>
               <A class="text-xl hover:text-purple" activeClass="text-purple" href="/blogs" end>{t("header.menu.blogs")}</A>
               <A class="text-xl hover:text-purple" activeClass="text-purple" href="/pricing" end>{t("header.menu.pricing")}</A>
+              <A class="text-xl hover:text-purple" activeClass="text-purple" href="/pricing" end>{t("header.menu.contact")}</A>
             </nav>
           </div>
         </div>
