@@ -1,5 +1,6 @@
 {
   "ui": {
+    "login": "Inicio",
     "signup": "Registrarse",
     "contact": "Contacto",
     "view": "Ver Todo",
