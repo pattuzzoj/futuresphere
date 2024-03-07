@@ -10,7 +10,7 @@ export default function Input(props: Props) {
     <div class="relative">
       <input 
       {...props}
-      type={isVisible() ? "text" : "password"}
+      type={props.type == "password" && isVisible() ? "text" : "password"}
       class={`${isVisible() && "pr-3"} w-100 outline-none border-2 rounded-lg border-gray-400 focus:border-purple p-0.5 placeholder-transparent caret-purple text-black peer`}
       />
 
