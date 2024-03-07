@@ -1,9 +1,26 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Login - FutureSphere",
+    "keywords": "login, futuresphere, sign in, access account",
+    "description": "Log in to your FutureSphere account to access exclusive features and stay updated with the latest technology trends. Sign in now to join our community!"
   },
-  "title": "",
-  "subtitle": ""
+  "title": "Log in",
+  "form": {
+    "email": {
+      "text": "Email",
+      "required": "This field is required",
+      "error": "Please enter a valid email address (example@example.com)"
+    },
+    "password": {
+      "text": "Password",
+      "required": "This field is required",
+      "error": "Your password must be at least 8 characters long and include a combination of uppercase and lowercase letters, numbers, and special characters."
+    },
+    "submit": "Log in",
+    "recovery": "Forgot your password?",
+    "register": {
+      "text": "Don't have an account?",
+      "link": "Register"
+    }
+  }
 }

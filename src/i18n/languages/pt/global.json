@@ -27,7 +27,9 @@
     "title": "Faça coisas incríveis conosco.",
     "text": "Mantenha-se atualizado com as novidades da nossa equipe e comunidade. Uma vez por mês.",
     "email": {
-      "placeholder": "Digite seu e-mail",
+      "text": "Email",
+      "required": "Este campo é obrigatório",
+      "error": "Por favor, insira um endereço de email válido (example@example.com)",
       "subscribe": "Inscrever-se para receber a newsletter"
     }
   }

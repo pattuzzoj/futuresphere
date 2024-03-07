@@ -27,7 +27,9 @@
     "title": "Haz cosas geniales con nosotros.",
     "text": "Mantente al tanto de las novedades de nuestro equipo y comunidad. Una vez al mes.",
     "email": {
-      "placeholder": "Ingresa tu correo electrónico",
+      "text": "Correo Electrónico",
+      "required": "Este campo es obligatorio",
+      "error": "Por favor, introduzca una dirección de correo electrónico válida (example@example.com)",
       "subscribe": "Suscribirse al boletín informativo"
     }
   }

@@ -19,12 +19,16 @@
     "password": {
       "text": "Senha",
       "required": "Este campo é obrigatório",
-      "error": "Sua senha deve ter no mínimo 8 caracteres e incluir uma combinação de letras, números e caracteres especiais."
+      "error": "Sua senha deve ter pelo menos 8 caracteres e incluir uma combinação de letras maiúsculas e minúsculas, números e caracteres especiais."
     },
     "terms": {
       "text": "Concordo com os termos de uso e política de privacidade.",
       "required": "Você deve concordar com os termos"
     },
-    "submit": "Cadastrar"
+    "submit": "Cadastrar",
+    "login": {
+      "text": "Já tem uma conta?",
+      "link": "Entrar"
+    }
   }
 }

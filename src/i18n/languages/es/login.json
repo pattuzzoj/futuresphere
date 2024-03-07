@@ -1,9 +1,26 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Inicio de sesión - FutureSphere",
+    "keywords": "inicio de sesión, futuresphere, acceder, cuenta",
+    "description": "Inicie sesión en su cuenta de FutureSphere para acceder a funciones exclusivas y mantenerse actualizado con las últimas tendencias tecnológicas. ¡Inicie sesión ahora para unirse a nuestra comunidad!"
   },
-  "title": "",
-  "subtitle": ""
+  "title": "Inicio de sesión",
+  "form": {
+    "email": {
+      "text": "Correo electrónico",
+      "required": "Este campo es obligatorio",
+      "error": "Por favor, ingrese una dirección de correo electrónico válida (ejemplo@ejemplo.com)"
+    },
+    "password": {
+      "text": "Contraseña",
+      "required": "Este campo es obligatorio",
+      "error": "Su contraseña debe tener al menos 8 caracteres e incluir una combinación de letras mayúsculas y minúsculas, números y caracteres especiales."
+    },
+    "submit": "Iniciar sesión",
+    "recovery": "¿Olvidó su contraseña?",
+    "register": {
+      "text": "¿No tiene una cuenta?",
+      "link": "Registrarse"
+    }
+  }
 }

@@ -57,7 +57,7 @@ export default function Careers() {
               )}
             </For>
           </div>
-          <span class="flex justify-center gap-1">
+          <span class="flex justify-center gap-0.75">
             <Link type="signup" />
             <Link type="contact" />
           </span>

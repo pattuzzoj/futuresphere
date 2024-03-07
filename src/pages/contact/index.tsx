@@ -4,6 +4,7 @@ import { Header, Main, Section, Aside, Footer } from "../../components/layout";
 import MetaData from '../../components/meta';
 import { Title, Text, Card } from "../../components/ui";
 import { createForm, email, minLength, required, pattern } from '@modular-forms/solid';
+import Input from '../../components/form/input';
 
 import hero from '../../assets/images/contact/hero.svg';
 import sales from '../../assets/icons/contact/sales.svg';
@@ -49,7 +50,7 @@ export default function Contact() {
         <Text>{t("text")}</Text>
         <br />
         <br />
-        <div class="lg:flex lg:justify-between">
+        <div class="lg:flex lg:justify-center gap-8">
           <div class="flex flex-col gap-5">
             <div>
               <Form class="flex-grow flex flex-col gap-2.5" onSubmit={() => {}}>
@@ -59,14 +60,12 @@ export default function Contact() {
                   validate={[
                     required("required"),
                     pattern(/^[\S]+$/, " ")
-                  ]}
-                  >
+                  ]}>
                     {(field, props) => (
-                      <div class="relative">
-                        <input {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple border-gray-400 p-0.5 placeholder-transparent caret-purple peer text-black" type="text" placeholder={t("form.first name.text")}/>
-                        <label class="absolute left-0 -top-50 scale-90 dark:text-white peer-placeholder-shown:left-0.75 peer-placeholder-shown:top-50 peer-placeholder-shown:-translate-y-50 peer-placeholder-shown:font-medium peer-placeholder-shown:text-black peer-placeholder-shown:scale-100 transition-all">{t("form.first name.text")}</label>
-                        {field.error && <span class="absolute left-0 top-100 text-sm text-red-600">{field.error == "required" ? t("form.first name.required") : t("form.first name.error")}</span>}
-                      </div>
+                      <Input {...props} id="firstName" type="text" placeholder={t("form.first name.text")}>
+                        {field.error &&
+                        <span class="absolute top-100 left-0 text-sm text-red-600">{field.error == "required" ? t("form.first name.required") : t("form.first name.error")}</span>}
+                      </Input>
                     )}
                   </Field>
                   <Field 
@@ -77,11 +76,10 @@ export default function Contact() {
                   ]}
                   >
                     {(field, props) => (
-                      <div class="relative">
-                        <input {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple border-gray-400 p-0.5 placeholder-transparent caret-purple peer text-black" type="text" placeholder={t("form.last name.text")}/>
-                        <label class="absolute left-0 -top-50 scale-90 dark:text-white peer-placeholder-shown:left-0.75 peer-placeholder-shown:top-50 peer-placeholder-shown:-translate-y-50 peer-placeholder-shown:font-medium peer-placeholder-shown:text-black peer-placeholder-shown:scale-100 transition-all">{t("form.last name.text")}</label>
-                        {field.error && <span class="absolute left-0 top-100 text-sm text-red-600">{field.error == "required" ? t("form.last name.required") : t("form.last name.error")}</span>}
-                      </div>
+                      <Input {...props} id="firstName" type="text" placeholder={t("form.last name.text")}>
+                        {field.error &&
+                        <span class="absolute top-100 left-0 text-sm text-red-600">{field.error == "required" ? t("form.last name.required") : t("form.last name.error")}</span>}
+                      </Input>
                     )}
                   </Field>
                   <Field
@@ -92,11 +90,10 @@ export default function Contact() {
                   ]}
                   >
                     {(field, props) => (
-                      <div class="relative">
-                        <input {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple border-gray-400 p-0.5 placeholder-transparent caret-purple peer text-black" type="email" placeholder={t("form.email.text")} required/>
-                        <label class="absolute left-0 -top-50 scale-90 dark:text-white peer-placeholder-shown:left-0.75 peer-placeholder-shown:top-50 peer-placeholder-shown:-translate-y-50 peer-placeholder-shown:font-medium peer-placeholder-shown:text-black peer-placeholder-shown:scale-100 transition-all">{t("form.email.text")}</label>
-                        {field.error && <span class="absolute left-0 top-100 text-sm text-red-600">{field.error == "required" ? t("form.email.required") : t("form.email.error")}</span>}
-                      </div>
+                      <Input {...props} id="firstName" type="email" placeholder={t("form.email.text")}>
+                        {field.error &&
+                        <span class="absolute top-100 left-0 text-sm text-red-600">{field.error == "required" ? t("form.email.required") : t("form.email.error")}</span>}
+                      </Input>
                     )}
                   </Field>
                   <Field 
@@ -107,11 +104,10 @@ export default function Contact() {
                   ]}
                   >
                     {(field, props) => (
-                      <div class="relative">
-                        <input {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple border-gray-400 p-0.5 placeholder-transparent caret-purple peer text-black" type="email" placeholder={t("form.subject.text")} required/>
-                        <label class="absolute left-0 -top-50 scale-90 dark:text-white peer-placeholder-shown:left-0.75 peer-placeholder-shown:top-50 peer-placeholder-shown:-translate-y-50 peer-placeholder-shown:font-medium peer-placeholder-shown:text-black peer-placeholder-shown:scale-100 transition-all">{t("form.subject.text")}</label>
-                        {field.error && <span class="absolute left-0 top-100 text-sm text-red-600">{field.error == "required" ? t("form.subject.required") : t("form.subject.error")}</span>}
-                      </div>
+                      <Input {...props} id="firstName" type="text" placeholder={t("form.subject.text")}>
+                        {field.error &&
+                        <span class="absolute top-100 left-0 text-sm text-red-600">{field.error == "required" ? t("form.subject.required") : t("form.subject.error")}</span>}
+                      </Input>
                     )}
                   </Field>
                 </div>
@@ -195,7 +191,7 @@ export default function Contact() {
                   {(field, props) => (
                     <div class="relative">
                       <textarea {...props} class="w-100 outline-none border-2 rounded-lg focus:border-purple border-gray-400 p-0.5 placeholder-transparent caret-purple peer" text-blackows="5" placeholder={t("form.message.text")} required/>
-                      <label class="absolute left-0 -top-1.25 scale-90 dark:text-white peer-placeholder-shown:left-0.75 peer-placeholder-shown:top-0.5 peer-placeholder-shown:font-medium peer-placeholder-shown:text-black peer-placeholder-shown:scale-100 transition-all">{t("form.message.text")}</label>
+                      <label class="absolute left-0 -top-1.25 scale-90 dark:text-white peer-placeholder-shown:left-0.75 peer-placeholder-shown:top-0.5 peer-placeholder-shown:text-black peer-placeholder-shown:scale-100 transition-all">{t("form.message.text")}</label>
                       {field.error && <span class="absolute left-0 top-100 text-sm text-red-600">{field.error == "required" ? t("form.message.required") : t("form.message.error")}</span>}
                     </div>
                   )}
@@ -235,7 +231,7 @@ export default function Contact() {
         <Title level="6" class="text-purple">{t("offices.section")}</Title>
         <Title level={2}>{t("offices.title")}</Title>
         <Text>{t("offices.text")}</Text>
-        <div class="grid gap-4 text-start md:grid-cols-2 md:gap-3 lg:grid-cols-3 lg:gap-2">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-3 lg:gap-2 text-start">
           <For each={t("offices.offices")}>
             {(data, index) => (
               <Card
@@ -253,7 +249,6 @@ export default function Contact() {
         <Title level="6" class="text-purple">{t("faq.section")}</Title>
         <Title level="2">{t("faq.title")}</Title>
         <Text>{t("faq.text")} futuresphere@gmail.com</Text>
-        <br />
         <div class="grid lg:grid-cols-2 gap-3 md:gap-4">
           <For each={t("faq.data")}>
             {(faq, _index) => (

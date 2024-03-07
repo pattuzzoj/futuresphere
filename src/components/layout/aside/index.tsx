@@ -1,9 +1,18 @@
 import { useI18n } from "../../../i18n";
 import iconMail from "../../../assets/icons/icon-mail.svg";
 import { Title, Text } from "../../ui/typography";
+import { createForm, email, required } from '@modular-forms/solid';
 
 export default function Aside() {
   const t = useI18n("global");
+
+  type newsletterForm = {
+    email: string;
+  }
+
+  const [newsletterForm, {Form, Field}] = createForm<newsletterForm>({
+    revalidateOn: "input"
+  });
 
   return (
     <aside class="flex justify-center">
@@ -13,23 +22,41 @@ export default function Aside() {
         <img class="size-4" src={iconMail} alt="" />
         <Title level="2" class="text-white">{t("aside.title")}</Title>
         <Text class="text-2xl text-white">{t("aside.text")}</Text>
-        <form class="relative w-100">
-          <input
-            class="w-100 rounded-2xl p-1 md:pr-20 text-black bg-white"
-            type="text"
-            placeholder={t("aside.email.placeholder")}
-          />
-          <button class="
+        <Form class="relative w-100" onSubmit={() => {}}>
+          <Field
+          name="email"
+          validate={[
+            required("required"),
+            email(" ")
+          ]}
+          >
+            {(field, props) => (
+              <>
+                <input
+                {...props}
+                class="w-100 rounded-2xl p-1 md:pr-20 outline-none border-2 focus:border-purple text-black bg-white placeholder-transparent caret-purple peer"
+                type="email"
+                placeholder={t("aside.email.text")}
+                />
+                <label class="
+                absolute -top-[20%] left-0
+                md:-top-1.5
+                peer-placeholder-shown:top-25 peer-placeholder-shown:left-1.25 peer-placeholder-shown:-translate-y-50
+                md:peer-placeholder-shown:top-50 md:peer-placeholder-shown:-translate-y-50
+                text-white peer-placeholder-shown:text-black
+                transition-all
+                ">
+                  {t("aside.email.text")}
+                </label>
+                {field.error && <span class="absolute top-25 -translate-y-50 right-1 md:-translate-y-0 md:right-auto md:left-0 md:top-100 text-sm font-semibold text-red-600">{field.error == "required" ? t("aside.email.required") : t("aside.email.error")}</span>}
+              </>
+            )}
+          </Field>
+          <button type="submit" class="
           w-100 rounded-2xl p-1 mt-0.5 text-white bg-purple
           md:w-auto md:mt-0 md:p-0.75 md:absolute md:top-50 md:right-0.25 md:-translate-y-50 
           ">{t("aside.email.subscribe")}</button>
-          {/* <button
-            class="absolute right-50 top-[110%] translate-x-50 md:right-0.125 md:translate-x-0 md:top-50 md:-translate-y-50 w-100 md:w-auto rounded-2xl bg-purple p-[0.8rem] text-white hover:bg-purple-light"
-            type="submit"
-          >
-            {t("aside.email.subscribe")}
-          </button> */}
-        </form>
+        </Form>
       </div>
     </aside>
   );

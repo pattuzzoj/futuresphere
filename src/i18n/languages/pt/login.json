@@ -1,9 +1,26 @@
 {
   "meta": {
-    "title": "",
-    "keywords": "",
-    "description": ""
+    "title": "Entrar - FutureSphere",
+    "keywords": "entrar, futuresphere, iniciar sessão, acessar conta",
+    "description": "Faça login em sua conta FutureSphere para acessar recursos exclusivos e ficar atualizado com as últimas tendências tecnológicas. Faça login agora para se juntar à nossa comunidade!"
   },
-  "title": "",
-  "subtitle": ""
+  "title": "Entrar",
+  "form": {
+    "email": {
+      "text": "Email",
+      "required": "Este campo é obrigatório",
+      "error": "Por favor, insira um endereço de email válido (exemplo@exemplo.com)"
+    },
+    "password": {
+      "text": "Senha",
+      "required": "Este campo é obrigatório",
+      "error": "Sua senha deve ter pelo menos 8 caracteres e incluir uma combinação de letras maiúsculas e minúsculas, números e caracteres especiais."
+    },
+    "submit": "Entrar",
+    "recovery": "Esqueceu sua senha?",
+    "register": {
+      "text": "Não tem uma conta?",
+      "link": "Registrar"
+    }
+  }
 }

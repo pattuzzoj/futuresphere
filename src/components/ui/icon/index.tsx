@@ -3,6 +3,7 @@ import { BsTwitter, BsFacebook, BsLinkedin } from 'solid-icons/bs';
 import { FiSun, FiMoon, FiX } from 'solid-icons/fi';
 import { RiSystemMenu2Line } from 'solid-icons/ri';
 import { FaSolidCircleCheck, FaSolidCircleXmark } from 'solid-icons/fa'
+import { AiFillEye, AiFillEyeInvisible } from 'solid-icons/ai'
 
 interface Props extends JSX.HTMLAttributes<HTMLSpanElement> {
   color?: string;
@@ -16,6 +17,8 @@ interface Props extends JSX.HTMLAttributes<HTMLSpanElement> {
   | "RiSystemMenu2Line"
   | "FaSolidCircleCheck"
   | "FaSolidCircleXmark"
+  | "AiFillEye"
+  | "AiFillEyeInvisible"
 };
 
 export default function Icon(props: Props) {
@@ -28,7 +31,9 @@ export default function Icon(props: Props) {
     FiX,
     RiSystemMenu2Line,
     FaSolidCircleCheck,
-    FaSolidCircleXmark
+    FaSolidCircleXmark,
+    AiFillEye,
+    AiFillEyeInvisible
   }[props.name]
       
 

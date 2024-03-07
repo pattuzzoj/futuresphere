@@ -19,12 +19,16 @@
     "password": {
       "text": "Password",
       "required": "This field is required",
-      "error": "Your password must be at least 8 characters long and include a combination of letters, numbers, and special characters."
+      "error": "Your password must be at least 8 characters long and include a combination of uppercase and lowercase letters, numbers, and special characters."
     },
     "terms": {
       "text": "I agree with terms of usage and privacy policy.",
       "required": "You must agree to the terms"
     },
-    "submit": "Register"
+    "submit": "Register",
+    "login": {
+      "text": "Already have an account?",
+      "link": "Log in"
+    }
   }
 }

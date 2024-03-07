@@ -6,7 +6,7 @@ import { Title, Text, Link } from "../../components/ui/typography";
 import Card from "../../components/ui/card";
 import Slide from "../../components/ui/widgets/slide";
 
-import hero from "../../assets/images/home/hero.svg";
+import hero from "../../assets/images/home/hero.png";
 import feature_1 from "../../assets/icons/features/feature-1.svg";
 import feature_2 from "../../assets/icons/features/feature-2.svg";
 import feature_3 from "../../assets/icons/features/feature-3.svg";
@@ -44,12 +44,12 @@ export default function Home() {
             <br />
             <Text class="text-xl">{t("text")}</Text>
             <br />
-            <div class="flex justify-center gap-1">
+            <div class="flex justify-center gap-0.75">
               <Link type="signup" />
               <Link type="contact" />
             </div>
           </div>
-          <img class="w-100 rounded-full" src={hero} alt="" loading="lazy" />
+          <img class="aspect-banner w-100 rounded-full" src={hero} alt="" loading="lazy" />
           <div class="flex flex-col justify-evenly gap-1 md:flex-row">
             <For each={t("stats")}>
               {(data, _index) => (

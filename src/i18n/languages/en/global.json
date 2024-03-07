@@ -27,7 +27,9 @@
     "title": "Do cool things with us.",
     "text": "Stay in the loop with updates from our team and community. Once a month.",
     "email": {
-      "placeholder": "Enter your email",
+      "text": "Email",
+      "required": "This field is required",
+      "error": "Please enter a valid email address (example@example.com)",
       "subscribe": "Subscribe to newsletter"
     }
   }
