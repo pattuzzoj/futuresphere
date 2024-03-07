@@ -204,8 +204,8 @@ export default function Header() {
           <A class="text-xl hover:text-purple" activeClass="text-purple" href="/pricing" end>{t("header.menu.contact")}</A>
         </nav>
         <span class="flex flex-col items-center gap-0.5 w-full">
-          <a class="w-full text-center rounded-full px-1.25 py-0.375 text-white bg-purple" href="">{t("ui.login")}</a>
-          <a class="w-full text-center rounded-full px-1.25 py-0.375 text-black dark:text-white bg-white dark:bg-dark" href="">{t("ui.signup")}</a>
+          <a class="w-full text-center rounded-full px-1.25 py-0.375 text-white bg-purple" href="/login">{t("ui.login")}</a>
+          <a class="w-full text-center rounded-full px-1.25 py-0.375 text-black dark:text-white bg-white dark:bg-dark" href="/signup">{t("ui.signup")}</a>
         </span>
       </div>
     </header>
