@@ -20,7 +20,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "allowUnusedLabels": true
+    "allowUnusedLabels": true,
+
+    "baseUrl" : "./src",
+    "paths": {
+      "@components/*": ["./components/*"],
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

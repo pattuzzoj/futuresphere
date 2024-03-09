@@ -3,7 +3,7 @@ import { useI18n } from "../../i18n";
 import { Header, Main, Section, Aside, Footer } from "../../components/layout";
 import MetaData from '../../components/meta';
 import { Title, Text, Link } from "../../components/ui/typography";
-import Card from "../../components/ui/card";
+import Card from "@components/ui/card";
 import Slide from "../../components/ui/widgets/slide";
 
 import hero from "../../assets/images/home/hero.png";
