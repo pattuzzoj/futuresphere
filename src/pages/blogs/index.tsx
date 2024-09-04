@@ -15,7 +15,7 @@ export default function Blogs() {
         <p>{t("blogs.text")}</p>
         <br />
         <div class="flex flex-col md:flex-row items-center text-start gap-1.25">
-          <img class="md:size-50 rounded-2xl" src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" loading='lazy' />
+          <img class="md:size-50 rounded-2xl" src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
           <div class="flex flex-col items-center text-start gap-1.25">
             <span class="self-start bg-purple-light rounded-full p-0.5 text-white">{t("blogs.blog.category")}</span>
             <h2>{t("blogs.blog.title")}</h2>

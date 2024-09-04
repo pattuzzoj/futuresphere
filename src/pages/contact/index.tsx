@@ -206,7 +206,7 @@ export default function Contact() {
                 </div>
               </Form>
             </div>
-            <div class="grid grid-cols-3 gap-5">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-2">
               <InfoCard icon="/assets/icons/contact/sales.svg" title={t("form.contacts.sales.title")} text={t("form.contacts.sales.email")}/>
               <InfoCard icon="/assets/icons/contact/partners.svg" title={t("form.contacts.partners.title")} text={t("form.contacts.partners.email")}/>
               <InfoCard icon="/assets/icons/contact/support.svg" title={t("form.contacts.support.title")} text={t("form.contacts.support.email")}/>
