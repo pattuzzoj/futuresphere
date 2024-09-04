@@ -31,27 +31,33 @@
     "values": [
       {
         "title": "Integridad",
-        "text": "Manteniendo la honestidad y la conducta ética en todo lo que hacemos, construyendo confianza con nuestros grupos de interés."
+        "text": "Manteniendo la honestidad y la conducta ética en todo lo que hacemos, construyendo confianza con nuestros grupos de interés.",
+        "icon": "src/assets/icons/values/value-1.svg"
       },
       {
         "title": "Innovación",
-        "text": "Abrazando una cultura de creatividad y mejora continua para impulsar soluciones innovadoras."
+        "text": "Abrazando una cultura de creatividad y mejora continua para impulsar soluciones innovadoras.",
+        "icon": "src/assets/icons/values/value-2.svg"
       },
       {
         "title": "Colaboración",
-        "text": "Fomentando un ambiente colaborativo que fomente el trabajo en equipo, la diversidad y el éxito compartido."
+        "text": "Fomentando un ambiente colaborativo que fomente el trabajo en equipo, la diversidad y el éxito compartido.",
+        "icon": "src/assets/icons/values/value-3.svg"
       },
       {
         "title": "Centrado en el Cliente",
-        "text": "Poniendo a nuestros clientes en el centro de todo lo que hacemos, brindando experiencias excepcionales y superando sus expectativas."
+        "text": "Poniendo a nuestros clientes en el centro de todo lo que hacemos, brindando experiencias excepcionales y superando sus expectativas.",
+        "icon": "src/assets/icons/values/value-4.svg"
       },
       {
         "title": "Sostenibilidad",
-        "text": "Operando con un enfoque en la responsabilidad ambiental y social, buscando un futuro más sostenible."
+        "text": "Operando con un enfoque en la responsabilidad ambiental y social, buscando un futuro más sostenible.",
+        "icon": "src/assets/icons/values/value-5.svg"
       },
       {
         "title": "Excelencia",
-        "text": "Buscando la excelencia en todos los aspectos de nuestro trabajo, estableciendo altos estándares y esforzándonos por un crecimiento y mejora continuos."
+        "text": "Buscando la excelencia en todos los aspectos de nuestro trabajo, estableciendo altos estándares y esforzándonos por un crecimiento y mejora continuos.",
+        "icon": "src/assets/icons/values/value-6.svg"
       }
     ]
   },
@@ -107,20 +113,24 @@
       {
         "city": "San Francisco",
         "address": "123 Main Street, Suite 200",
-        "number": "(555) 123-4567"
+        "number": "(555) 123-4567",
+        "thumbnail": "src/assets/images/san_francisco.svg"
       },
       {
         "city": "Nuevo México",
         "address": "789 Canyon Road",
-        "number": "(555) 555-1234"
+        "number": "(555) 555-1234",
+        "thumbnail": "src/assets/images/new_mexico.svg"
       },
       {
         "city": "Londres",
         "address": "789 Oak Street, 4to Piso, Suite 402",
-        "number": "+44 20 1234 5678"
+        "number": "+44 20 1234 5678",
+        "thumbnail": "src/assets/images/london.svg"
       }
     ]
   },
+  
   "careers": {
     "section": "Carreras",
     "title": "Nuevas oportunidades laborales",

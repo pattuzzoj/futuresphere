@@ -1,22 +1,15 @@
 import { For } from "solid-js";
-import { useI18n } from "../../i18n";
-import { Header, Main, Section, Aside, Footer } from "../../components/layout";
-import MetaData from '../../components/meta';
-import { Title, Text, Card } from "../../components/ui";
 import { createForm, email, minLength, required, pattern } from '@modular-forms/solid';
-import Input from '../../components/form/input';
-
-import hero from '../../assets/images/contact/hero.svg';
-import sales from '../../assets/icons/contact/sales.svg';
-import partners from '../../assets/icons/contact/partners.svg';
-import support from '../../assets/icons/contact/support.svg';
-
-import san_francisco from "../../assets/images/san_francisco.svg";
-import new_mexico from "../../assets/images/new_mexico.svg";
-import london from "../../assets/images/london.svg";
+import { translate, scopedTranslator } from "i18n";
+import Page from 'components/layout/page';
+import Section from 'components/layout/section';
+import Aside from 'components/layout/aside';
+import Input from 'components/form/input';
+import OfficeCard from "components/ui/cards/OfficeCard";
+import InfoCard from "components/ui/cards/InfoCard";
 
 export default function Contact() {
-  const t = useI18n("contact");
+  const t = scopedTranslator(translate, "contact");
 
   type contactForm = {
     firstName: string;
@@ -38,16 +31,11 @@ export default function Contact() {
     revalidateOn: "input"
   });
 
-  const officesImages = [san_francisco, new_mexico, london];
-
   return (
-    <>
-    <MetaData title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")} />
-    <Header />
-    <Main>
+    <Page title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}>
       <Section>
-        <Title level="1">{t("title")}</Title>
-        <Text>{t("text")}</Text>
+        <h1>{t("title")}</h1>
+        <p>{t("text")}</p>
         <br />
         <br />
         <div class="lg:flex lg:justify-center gap-8">
@@ -112,7 +100,7 @@ export default function Contact() {
                   </Field>
                 </div>
                 <div>
-                  <Text class="text-start mb-1"><span class="text-sm">{t("form.services.text")}</span></Text>
+                  <p class="text-start mb-1"><span class="text-sm">{t("form.services.text")}</span></p>
                   <div class="flex gap-0.75">
                     <Field
                     name="services.development"
@@ -219,24 +207,23 @@ export default function Contact() {
               </Form>
             </div>
             <div class="grid grid-cols-3 gap-5">
-              <Card type="info" thumbnail={sales} title={t("form.contacts.sales.title")} text={t("form.contacts.sales.email")}/>
-              <Card type="info" thumbnail={partners} title={t("form.contacts.partners.title")} text={t("form.contacts.partners.email")}/>
-              <Card type="info" thumbnail={support} title={t("form.contacts.support.title")} text={t("form.contacts.support.email")}/>
+              <InfoCard icon="src/assets/icons/contact/sales.svg" title={t("form.contacts.sales.title")} text={t("form.contacts.sales.email")}/>
+              <InfoCard icon="src/assets/icons/contact/partners.svg" title={t("form.contacts.partners.title")} text={t("form.contacts.partners.email")}/>
+              <InfoCard icon="src/assets/icons/contact/support.svg" title={t("form.contacts.support.title")} text={t("form.contacts.support.email")}/>
             </div>
           </div>
-          <img class="hidden lg:block px-3 self-start" src={hero} alt="" />
+          <img class="hidden lg:block px-3 self-start" src="src/assets/images/contact/hero.svg" alt="" />
         </div>
       </Section>
       <Section>
-        <Title level="6" class="text-purple">{t("offices.section")}</Title>
-        <Title level={2}>{t("offices.title")}</Title>
-        <Text>{t("offices.text")}</Text>
+        <h6 class="text-purple">{t("offices.section")}</h6>
+        <h2>{t("offices.title")}</h2>
+        <p>{t("offices.text")}</p>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-3 lg:gap-2 text-start">
           <For each={t("offices.offices")}>
-            {(data, index) => (
-              <Card
-                type="office"
-                thumbnail={officesImages[index()]}
+            {(data) => (
+              <OfficeCard
+                thumbnail={data.thumbnail}
                 city={data.city}
                 text={data.address}
                 number={data.number}
@@ -246,24 +233,22 @@ export default function Contact() {
         </div>
       </Section>
       <Section>
-        <Title level="6" class="text-purple">{t("faq.section")}</Title>
-        <Title level="2">{t("faq.title")}</Title>
-        <Text>{t("faq.text")} futuresphere@gmail.com</Text>
+        <h6 class="text-purple">{t("faq.section")}</h6>
+        <h2>{t("faq.title")}</h2>
+        <p>{t("faq.text")} futuresphere@gmail.com</p>
         <div class="grid lg:grid-cols-2 gap-3 md:gap-4">
           <For each={t("faq.data")}>
             {(faq, _index) => (
               <div class="text-start">
-                <Title level="6" class="text-purple">{faq.title}</Title>
+                <h6 class="text-purple">{faq.title}</h6>
                 <br />
-                <Text>{faq.text}</Text>
+                <p>{faq.text}</p>
               </div>
             )}
           </For>
         </div>
       </Section>
       <Aside />
-    </Main>
-    <Footer />
-    </>
+    </Page>
   );
 }

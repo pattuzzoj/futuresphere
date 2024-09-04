@@ -1,9 +1,9 @@
 import { JSX, createSignal, Show } from 'solid-js';
 import Icon from '../../ui/icon';
 
-interface Props extends JSX.InputHTMLAttributes<HTMLInputElement> {}
+interface InputProps extends JSX.InputHTMLAttributes<HTMLInputElement> {}
 
-export default function Input(props: Props) {
+function Input(props: InputProps) {
   const [isVisible, setIsVisible] = createSignal(false);
 
   return (
@@ -30,3 +30,5 @@ export default function Input(props: Props) {
     </div>
   );
 }
+
+export default Input;

@@ -1,12 +1,10 @@
-import { Header, Footer, Main } from "../../components/layout";
-import { Title } from "../../components/ui";
 import { createForm, email, required, pattern } from '@modular-forms/solid';
-import { useI18n } from "../../i18n";
-import Input from '../../components/form/input';
-import hero from '../../assets/images/contact/hero.svg';
+import { scopedTranslator, translate } from "i18n";
+import Page from 'components/layout/page';
+import Input from 'components/form/input';
 
 export default function Login() {
-  const t = useI18n("login");
+  const t = scopedTranslator(translate, "login");
 
   type signupForm = {
     email: string;
@@ -18,12 +16,11 @@ export default function Login() {
   })
 
   return (
-    <div class="flex flex-col justify-between h-[100vh]">
-      <Header />
-      <Main>
+    <Page title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}>
+      <div class="flex flex-col justify-between h-[100vh]">
         <div class="lg:flex lg:justify-center gap-8">
           <div class="flex flex-col justify-center items-center gap-3">
-            <Title class="self-center lg:self-start" level="1">{t("title")}</Title>
+            <h1 class="self-center lg:self-start">{t("title")}</h1>
             <Form class="flex flex-col gap-2.5 w-100 md:w-[30rem]" onSubmit={() => {}}>
               <Field
               name="email"
@@ -61,10 +58,9 @@ export default function Login() {
               </div>
             </Form>
           </div>
-          <img class="hidden lg:block px-3 self-start" src={hero} alt="" />
+          <img class="hidden lg:block px-3 self-start" src="src/assets/images/contact/hero.svg" alt="" />
         </div>
-      </Main>
-      <Footer />
-    </div>
+      </div>
+    </Page>
   );
 }

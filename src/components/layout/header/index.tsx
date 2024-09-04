@@ -1,15 +1,16 @@
 import { createSignal, Show } from "solid-js";
 import { A } from "@solidjs/router";
-import { Icon } from "../../ui";
-import { theme, setTheme } from "../../../theme";
-import { useI18n, setLocaleI18n, flag, setFlag, flags } from "../../../i18n";
-import Logo from "../../ui/logo";
+import { translate, scopedTranslator, setLocaleI18n, flag, setFlag, flags } from "i18n";
+import useTheme from "theme";
+import Icon from "components/ui/icon";
+import Logo from "components/ui/logo";
 
-export default function Header() {
+function Header() {
+  const [theme, setTheme] = useTheme();
   const [menuIsOpen, setMenuIsOpen] = createSignal(false);
   const [menuLanguageisOpen, setMenuLanguageIsOpen] = createSignal(false);
   const [_language, setLanguage] = setLocaleI18n();
-  const t = useI18n("global");
+  const t = scopedTranslator(translate, "global");
 
   return (
     <header class="
@@ -211,3 +212,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;

@@ -1,10 +1,9 @@
-import { useI18n } from "../../../i18n";
-import iconMail from "../../../assets/icons/icon-mail.svg";
-import { Title, Text } from "../../ui/typography";
 import { createForm, email, required } from '@modular-forms/solid';
+import { scopedTranslator, translate } from "i18n";
+import iconMail from "assets/icons/icon-mail.svg";
 
-export default function Aside() {
-  const t = useI18n("global");
+function Aside() {
+  const t = scopedTranslator(translate, "global");
 
   type newsletterForm = {
     email: string;
@@ -20,8 +19,8 @@ export default function Aside() {
       flex flex-col items-center gap-1.5 sm:gap-2 max-w-[60rem] rounded-3xl bg-aside bg-cover
       p-2 sm:p-3 md:p-3.5 lg:p-6 xl:p-7 2xl:p-8">
         <img class="size-4" src={iconMail} alt="" />
-        <Title level="2" class="text-white">{t("aside.title")}</Title>
-        <Text class="text-2xl text-white">{t("aside.text")}</Text>
+        <h2 class="text-white">{t("aside.title")}</h2>
+        <p class="text-2xl text-white">{t("aside.text")}</p>
         <Form class="relative w-100" onSubmit={() => {}}>
           <Field
           name="email"
@@ -61,3 +60,5 @@ export default function Aside() {
     </aside>
   );
 }
+
+export default Aside;

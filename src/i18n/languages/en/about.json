@@ -32,27 +32,33 @@
     "values": [
       {
         "title": "Integrity",
-        "text": "Upholding honesty and ethical conduct in everything we do, building trust with our stakeholders."
+        "text": "Upholding honesty and ethical conduct in everything we do, building trust with our stakeholders.",
+        "icon": "src/assets/icons/values/value-1.svg"
       },
       {
         "title": "Innovation",
-        "text": "Embracing a culture of creativity and continuous improvement to drive groundbreaking solutions."
+        "text": "Embracing a culture of creativity and continuous improvement to drive groundbreaking solutions.",
+        "icon": "src/assets/icons/values/value-2.svg"
       },
       {
         "title": "Collaboration",
-        "text": "Fostering a collaborative environment that encourages teamwork, diversity, and shared success."
+        "text": "Fostering a collaborative environment that encourages teamwork, diversity, and shared success.",
+        "icon": "src/assets/icons/values/value-3.svg"
       },
       {
         "title": "Customer-centric",
-        "text": " Putting our customers at the heart of everything we do, delivering exceptional experiences and exceeding their expectations."
+        "text": " Putting our customers at the heart of everything we do, delivering exceptional experiences and exceeding their expectations.",
+        "icon": "src/assets/icons/values/value-4.svg"
       },
       {
         "title": "Sustainability",
-        "text": "Operating with a focus on environmental and social responsibility, striving for a more sustainable future."
+        "text": "Operating with a focus on environmental and social responsibility, striving for a more sustainable future.",
+        "icon": "src/assets/icons/values/value-5.svg"
       },
       {
         "title": "Excellence",
-        "text": "Pursuing excellence in all aspects of our work, setting high standards and striving for continuous growth and improvement."
+        "text": "Pursuing excellence in all aspects of our work, setting high standards and striving for continuous growth and improvement.",
+        "icon": "src/assets/icons/values/value-6.svg"
       }
     ]
   },
@@ -108,17 +114,20 @@
       {
         "city": "San Francisco",
         "address": "123 Main Street, Suite 200",
-        "number": "(555) 123-4567"
+        "number": "(555) 123-4567",
+        "thumbnail": "src/assets/images/san_francisco.svg"
       },
       {
         "city": "New Mexico",
         "address": "789 Canyon Road",
-        "number": "(555) 555-1234"
+        "number": "(555) 555-1234",
+        "thumbnail": "src/assets/images/new_mexico.svg"
       },
       {
         "city": "London",
         "address": "789 Oak Street, 4th Floor, Suite 402",
-        "number": "+44 20 1234 5678"
+        "number": "+44 20 1234 5678",
+        "thumbnail": "src/assets/images/london.svg"
       }
     ]
   },

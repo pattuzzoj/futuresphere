@@ -1,8 +1,8 @@
 import { JSX } from 'solid-js';
 
-interface Props extends JSX.HTMLAttributes<SVGAElement> {}
+interface LogoProps extends JSX.HTMLAttributes<SVGAElement> {}
 
-export default function Logo(props: Props) {
+export default function Logo(props: LogoProps) {
   return (
     <svg class={props.class} viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_321_13227)">

@@ -5,7 +5,7 @@ import { RiSystemMenu2Line } from 'solid-icons/ri';
 import { FaSolidCircleCheck, FaSolidCircleXmark } from 'solid-icons/fa'
 import { AiFillEye, AiFillEyeInvisible } from 'solid-icons/ai'
 
-interface Props extends JSX.HTMLAttributes<HTMLSpanElement> {
+interface IconProps extends JSX.HTMLAttributes<HTMLSpanElement> {
   color?: string;
   name:
   | "BsTwitter"
@@ -21,7 +21,7 @@ interface Props extends JSX.HTMLAttributes<HTMLSpanElement> {
   | "AiFillEyeInvisible"
 };
 
-export default function Icon(props: Props) {
+function Icon(props: IconProps) {
   const IconComponent = {
     BsTwitter,
     BsFacebook,
@@ -41,3 +41,5 @@ export default function Icon(props: Props) {
     <IconComponent class={`${props.color}`} title={props.title}/>
   );
 }
+
+export default Icon;

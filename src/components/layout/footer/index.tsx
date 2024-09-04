@@ -1,9 +1,9 @@
-import { Icon } from "../../ui";
-import { useI18n } from "../../../i18n";
-import logo from "../../../assets/icons/logo.svg";
+import { scopedTranslator, translate } from "i18n";
+import Icon from "components/ui/icon";
+import logo from "assets/icons/logo.svg";
 
-export default function Footer() {
-  const t = useI18n("global");
+function Footer() {
+  const t = scopedTranslator(translate, "global");
 
   return (
     <footer class="bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 p-1 text-white md:p-1.5">
@@ -47,3 +47,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;

@@ -3,8 +3,9 @@
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["ES2021", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
+    "removeComments": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -17,15 +18,14 @@
 
     /* Linting */
     "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "allowUnusedLabels": true,
 
     "baseUrl" : "./src",
-    "paths": {
-      "@components/*": ["./components/*"],
-    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

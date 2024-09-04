@@ -1,37 +1,16 @@
-import { createSignal, createEffect } from 'solid-js';
-import { HTML } from '../utils/constants'
+import { Accessor, Setter, createEffect } from "solid-js";
+import useLocalStorage from "hooks/useLocalStorage";
 
 type Theme = "light" | "dark";
 
-const storedTheme: any = localStorage.getItem("theme");
+function useTheme(): [Accessor<Theme>, Setter<Theme>] {
+  const [theme, setTheme] = useLocalStorage<Theme>("theme", "dark");
 
-const defaultTheme = () => {
-  if(!storedTheme) {
-    localStorage.setItem("theme", "light");
-    return "light";
-  } else {
-    return storedTheme;
-  }
+  createEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme());
+  });
+
+  return [theme, setTheme];
 }
 
-const [theme, setTheme] = createSignal<Theme>(defaultTheme());
-HTML.setAttribute("data-theme", theme());
-
-createEffect(() => {
-  localStorage.setItem("theme", theme());
-  HTML.setAttribute("data-theme", theme());
-});
-
-window.addEventListener("storage", themeUpdateListener);
-
-function themeUpdateListener(event: StorageEvent) {
-  if (event.key === "theme") {
-    const newTheme = event.newValue as Theme;
-
-    if(newTheme !== null && newTheme !== theme()) {
-      setTheme(newTheme);
-    }
-  }
-}
-
-export {theme, setTheme};
+export default useTheme;
