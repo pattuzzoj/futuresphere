@@ -15,7 +15,7 @@ export default function Careers() {
       <Section>
         <h1>{t("title")}</h1>
         <p>{t("text")}</p>
-        <img class="mt-5" src="src/assets/images/careers/hero.svg" alt="" />
+        <img class="mt-5" src="/assets/images/careers/hero.svg" alt="" />
       </Section>
       <Section>
         <div class="flex flex-col md:flex-row items-center text-start gap-1.25">

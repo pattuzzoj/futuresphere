@@ -20,7 +20,7 @@ export default function About() {
           <SignupLink/>
           <ContactLink/>
         </span>
-        <img class="aspect-wide" src="src/assets/images/about/hero.svg" alt="" />
+        <img class="aspect-wide" src="/assets/images/about/hero.svg" alt="" />
       </Section>
       <Section>
         <h6>{t("story.section")}</h6>
@@ -39,19 +39,19 @@ export default function About() {
         <p>{t("clients.text")}</p>
         <div class="flex flex-wrap justify-center gap-4 mt-1.5">
           <span class="flex items-center text-3xl dark:text-white font-bold gap-0.5">
-            <img class="size-4" src="src/assets/icons/clients/discord.svg" alt="" />
+            <img class="size-4" src="/assets/icons/clients/discord.svg" alt="" />
             Discord
           </span>
           <span class="flex items-center text-3xl dark:text-white font-bold gap-0.5">
-            <img class="size-4" src="src/assets/icons/clients/shopify.svg" alt="" />
+            <img class="size-4" src="/assets/icons/clients/shopify.svg" alt="" />
             Shopify
           </span>
           <span class="flex items-center text-3xl dark:text-white font-bold gap-0.5">
-            <img class="size-4" src="src/assets/icons/clients/slack.svg" alt="" />
+            <img class="size-4" src="/assets/icons/clients/slack.svg" alt="" />
             Slack
           </span>
           <span class="flex items-center text-3xl dark:text-white font-bold gap-0.5">
-            <img class="size-4" src="src/assets/icons/clients/google.svg" alt="" />
+            <img class="size-4" src="/assets/icons/clients/google.svg" alt="" />
             Google
           </span>
         </div>

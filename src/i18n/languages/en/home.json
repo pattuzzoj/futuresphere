@@ -28,17 +28,17 @@
       {
         "title": "Cutting-Edge Innovation",
         "text": "Experience innovative technological advancements pushing the boundaries of what's possible, revolutionizing industries and transforming the way we live and work.",
-        "icon": "src/assets/icons/features/feature-1.svg"
+        "icon": "/assets/icons/features/feature-1.svg"
       },
       {
         "title": "Seamless Connectivity",
         "text": "Stay connected anytime, anywhere with our robust and reliable network infrastructure, ensuring uninterrupted communication and effortless access to the digital world.",
-        "icon": "src/assets/icons/features/feature-2.svg"
+        "icon": "/assets/icons/features/feature-2.svg"
       },
       {
         "title": "Intuitive User Interface",
         "text": "Enjoy a smooth and intuitive user experience with our sleek and easy-to-use interface, designed to simplify complex tasks and enhance productivity.",
-        "icon": "src/assets/icons/features/feature-3.svg"
+        "icon": "/assets/icons/features/feature-3.svg"
       }
     ]
   },

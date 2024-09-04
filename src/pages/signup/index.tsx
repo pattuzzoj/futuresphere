@@ -89,7 +89,7 @@ export default function SignUp() {
               <a href="/login">{t("form.login.text")} <span class="text-purple">{t("form.login.link")}</span></a>
             </Form>
           </div>
-          <img class="hidden lg:block px-3 self-start" src="src/assets/images/contact/hero.svg" alt="" />
+          <img class="hidden lg:block px-3 self-start" src="/assets/images/contact/hero.svg" alt="" />
         </div>
       </div>
     </Page>

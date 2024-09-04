@@ -28,17 +28,17 @@
       {
         "title": "Innovación de Vanguardia",
         "text": "Experimenta avances tecnológicos innovadores que empujan los límites de lo posible, revolucionando industrias y transformando la forma en que vivimos y trabajamos.",
-        "icon": "src/assets/icons/features/feature-1.svg"
+        "icon": "/assets/icons/features/feature-1.svg"
       },
       {
         "title": "Conectividad sin Fisuras",
         "text": "Mantente conectado en todo momento y lugar con nuestra infraestructura de red robusta y confiable, garantizando comunicación ininterrumpida y acceso sin esfuerzo al mundo digital.",
-        "icon": "src/assets/icons/features/feature-2.svg"
+        "icon": "/assets/icons/features/feature-2.svg"
       },
       {
         "title": "Interfaz de Usuario Intuitiva",
         "text": "Disfruta de una experiencia de usuario fluida e intuitiva con nuestra interfaz elegante y fácil de usar, diseñada para simplificar tareas complejas y mejorar la productividad.",
-        "icon": "src/assets/icons/features/feature-3.svg"
+        "icon": "/assets/icons/features/feature-3.svg"
       }
     ]
   },

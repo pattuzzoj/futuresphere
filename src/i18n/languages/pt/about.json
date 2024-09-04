@@ -33,32 +33,32 @@
       {
         "title": "Integridade",
         "text": "Defendendo honestidade e conduta ética em tudo o que fazemos, construindo confiança com nossos stakeholders.",
-        "icon": "src/assets/icons/values/value-1.svg"
+        "icon": "/assets/icons/values/value-1.svg"
       },
       {
         "title": "Inovação",
         "text": "Abraçando uma cultura de criatividade e melhoria contínua para impulsionar soluções inovadoras.",
-        "icon": "src/assets/icons/values/value-2.svg"
+        "icon": "/assets/icons/values/value-2.svg"
       },
       {
         "title": "Colaboração",
         "text": "Fomentando um ambiente colaborativo que incentiva o trabalho em equipe, a diversidade e o sucesso compartilhado.",
-        "icon": "src/assets/icons/values/value-3.svg"
+        "icon": "/assets/icons/values/value-3.svg"
       },
       {
         "title": "Centrado no Cliente",
         "text": "Colocando nossos clientes no centro de tudo o que fazemos, entregando experiências excepcionais e superando suas expectativas.",
-        "icon": "src/assets/icons/values/value-4.svg"
+        "icon": "/assets/icons/values/value-4.svg"
       },
       {
         "title": "Sustentabilidade",
         "text": "Operando com foco na responsabilidade ambiental e social, buscando um futuro mais sustentável.",
-        "icon": "src/assets/icons/values/value-5.svg"
+        "icon": "/assets/icons/values/value-5.svg"
       },
       {
         "title": "Excelência",
         "text": "Buscando a excelência em todos os aspectos do nosso trabalho, estabelecendo altos padrões e buscando um crescimento e melhoria contínuos.",
-        "icon": "src/assets/icons/values/value-6.svg"
+        "icon": "/assets/icons/values/value-6.svg"
       }
     ]
   },
@@ -115,19 +115,19 @@
         "city": "São Francisco",
         "address": "123 Main Street, Suite 200",
         "number": "(555) 123-4567",
-        "thumbnail": "src/assets/images/san_francisco.svg"
+        "thumbnail": "/assets/images/san_francisco.svg"
       },
       {
         "city": "Novo México",
         "address": "789 Canyon Road",
         "number": "(555) 555-1234",
-        "thumbnail": "src/assets/images/new_mexico.svg"
+        "thumbnail": "/assets/images/new_mexico.svg"
       },
       {
         "city": "Londres",
         "address": "789 Oak Street, 4º Andar, Suite 402",
         "number": "+44 20 1234 5678",
-        "thumbnail": "src/assets/images/london.svg"
+        "thumbnail": "/assets/images/london.svg"
       }
     ]
   },

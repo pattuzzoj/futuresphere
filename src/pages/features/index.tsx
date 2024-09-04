@@ -5,12 +5,12 @@ import Aside from 'components/layout/aside';
 import InfoCard from "components/ui/cards/InfoCard";
 
 const featureIcons = [
-  "src/assets/icons/features/feature-1.svg",
-  "src/assets/icons/features/feature-2.svg",
-  "src/assets/icons/features/feature-3.svg",
-  "src/assets/icons/features/feature-4.svg",
-  "src/assets/icons/features/feature-5.svg",
-  "src/assets/icons/features/feature-6.svg",
+  "/assets/icons/features/feature-1.svg",
+  "/assets/icons/features/feature-2.svg",
+  "/assets/icons/features/feature-3.svg",
+  "/assets/icons/features/feature-4.svg",
+  "/assets/icons/features/feature-5.svg",
+  "/assets/icons/features/feature-6.svg",
   ];
 
 export default function Contact() {

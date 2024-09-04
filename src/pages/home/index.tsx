@@ -29,7 +29,7 @@ export default function Home() {
             <ContactLink/>
           </div>
         </div>
-        <img class="aspect-banner w-100 rounded-full" src="assets/images/home/hero.svg" alt="" loading="lazy" />
+        <img class="aspect-banner w-100 rounded-full" src="/assets/images/home/hero.svg" alt="" loading="lazy" />
         <div class="flex flex-col justify-evenly gap-1 md:flex-row">
           <For each={t("stats")}>
             {(data, _index) => (
@@ -76,19 +76,19 @@ export default function Home() {
         <p class="text-2xl">{t("our clients.text")}</p>
         <div class="flex flex-wrap justify-center gap-4 mt-1.5">
           <span class="flex items-center text-3xl dark:text-white font-bold gap-0.5">
-            <img class="size-4" src="src/assets/icons/clients/discord.svg" alt="" />
+            <img class="size-4" src="/assets/icons/clients/discord.svg" alt="" />
             Discord
           </span>
           <span class="flex items-center text-3xl dark:text-white font-bold gap-0.5">
-            <img class="size-4" src="src/assets/icons/clients/shopify.svg" alt="" />
+            <img class="size-4" src="/assets/icons/clients/shopify.svg" alt="" />
             Shopify
           </span>
           <span class="flex items-center text-3xl dark:text-white font-bold gap-0.5">
-            <img class="size-4" src="src/assets/icons/clients/slack.svg" alt="" />
+            <img class="size-4" src="/assets/icons/clients/slack.svg" alt="" />
             Slack
           </span>
           <span class="flex items-center text-3xl dark:text-white font-bold gap-0.5">
-            <img class="size-4" src="src/assets/icons/clients/google.svg" alt="" />
+            <img class="size-4" src="/assets/icons/clients/google.svg" alt="" />
             Google
           </span>
         </div>

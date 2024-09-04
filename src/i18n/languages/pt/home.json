@@ -28,17 +28,17 @@
       {
         "title": "Inovação de Ponta",
         "text": "Experimente avanços tecnológicos inovadores que empurram os limites do possível, revolucionando indústrias e transformando a maneira como vivemos e trabalhamos.",
-        "icon": "src/assets/icons/features/feature-1.svg"
+        "icon": "/assets/icons/features/feature-1.svg"
       },
       {
         "title": "Conectividade Sem Falhas",
         "text": "Permaneça conectado a qualquer hora e em qualquer lugar com nossa infraestrutura de rede robusta e confiável, garantindo comunicação ininterrupta e acesso sem esforço ao mundo digital.",
-        "icon": "src/assets/icons/features/feature-2.svg"
+        "icon": "/assets/icons/features/feature-2.svg"
       },
       {
         "title": "Interface de Usuário Intuitiva",
         "text": "Desfrute de uma experiência de usuário suave e intuitiva com nossa interface elegante e fácil de usar, projetada para simplificar tarefas complexas e aumentar a produtividade.",
-        "icon": "src/assets/icons/features/feature-3.svg"
+        "icon": "/assets/icons/features/feature-3.svg"
       }
     ]
   },

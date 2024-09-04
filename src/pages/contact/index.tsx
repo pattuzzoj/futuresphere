@@ -207,12 +207,12 @@ export default function Contact() {
               </Form>
             </div>
             <div class="grid grid-cols-3 gap-5">
-              <InfoCard icon="src/assets/icons/contact/sales.svg" title={t("form.contacts.sales.title")} text={t("form.contacts.sales.email")}/>
-              <InfoCard icon="src/assets/icons/contact/partners.svg" title={t("form.contacts.partners.title")} text={t("form.contacts.partners.email")}/>
-              <InfoCard icon="src/assets/icons/contact/support.svg" title={t("form.contacts.support.title")} text={t("form.contacts.support.email")}/>
+              <InfoCard icon="/assets/icons/contact/sales.svg" title={t("form.contacts.sales.title")} text={t("form.contacts.sales.email")}/>
+              <InfoCard icon="/assets/icons/contact/partners.svg" title={t("form.contacts.partners.title")} text={t("form.contacts.partners.email")}/>
+              <InfoCard icon="/assets/icons/contact/support.svg" title={t("form.contacts.support.title")} text={t("form.contacts.support.email")}/>
             </div>
           </div>
-          <img class="hidden lg:block px-3 self-start" src="src/assets/images/contact/hero.svg" alt="" />
+          <img class="hidden lg:block px-3 self-start" src="/assets/images/contact/hero.svg" alt="" />
         </div>
       </Section>
       <Section>

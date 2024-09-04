@@ -58,7 +58,7 @@ export default function Login() {
               </div>
             </Form>
           </div>
-          <img class="hidden lg:block px-3 self-start" src="src/assets/images/contact/hero.svg" alt="" />
+          <img class="hidden lg:block px-3 self-start" src="/assets/images/contact/hero.svg" alt="" />
         </div>
       </div>
     </Page>

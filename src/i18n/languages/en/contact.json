@@ -70,19 +70,19 @@
         "city": "San Francisco",
         "address": "123 Main Street, Suite 200",
         "number": "(555) 123-4567",
-        "thumbnail": "src/assets/images/san_francisco.svg"
+        "thumbnail": "/assets/images/san_francisco.svg"
       },
       {
         "city": "New Mexico",
         "address": "789 Canyon Road",
         "number": "(555) 555-1234",
-        "thumbnail": "src/assets/images/new_mexico.svg"
+        "thumbnail": "/assets/images/new_mexico.svg"
       },
       {
         "city": "London",
         "address": "789 Oak Street, 4th Floor, Suite 402",
         "number": "+44 20 1234 5678",
-        "thumbnail": "src/assets/images/london.svg"
+        "thumbnail": "/assets/images/london.svg"
       }
     ]
   },
