@@ -29,7 +29,7 @@ export default function Home() {
             <ContactLink/>
           </div>
         </div>
-        <img class="aspect-banner w-100 rounded-full" src="/assets/images/home/hero.svg" alt="" loading="lazy" />
+        <img class="aspect-banner w-100 rounded-full" src="/src/assets/images/home/hero.svg" alt="" loading="lazy" />
         <div class="flex flex-col justify-evenly gap-1 md:flex-row">
           <For each={t("stats")}>
             {(data, _index) => (
