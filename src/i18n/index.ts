@@ -41,8 +41,4 @@ function setLocaleI18n() {
   return [language, setLanguage];
 }
 
-function useI18n(scope: any) {
-  return scopedTranslator(translate, scope);
-}
-
 export { translate, scopedTranslator, setLocaleI18n, flag, setFlag, flags }
