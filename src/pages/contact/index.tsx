@@ -101,7 +101,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p class="text-start mb-1"><span class="text-sm">{t("form.services.text")}</span></p>
-                  <div class="flex gap-0.75">
+                  <div class="flex flex-wrap gap-1.5">
                     <Field
                     name="services.development"
                     type="boolean"
