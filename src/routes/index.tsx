@@ -2,7 +2,7 @@ import { lazy } from 'solid-js';
 
 const routes = [
   {
-    path: '',
+    path: ['', '/', '/home'],
     component: lazy(() => import('pages/home')),
   },
   {
