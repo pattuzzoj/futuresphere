@@ -1,9 +1,64 @@
-// @import url('./reset.css');
-// @import url('./variables.css');
-// @import url('./colors.css');
-// @import url('./tipografy.css');
-// @import url('../theme');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-  background-color: #000;
+@layer base {
+  * {
+      transition: inherit;
+  }
+
+  html {
+    font-size: clamp(12px, 2vw, 16px);
+  }
+
+  body {
+    @apply
+    text-black dark:text-white
+    bg-white dark:bg-dark
+    selection:text-white selection:bg-purple
+    transition-colors duration-300 ease-out
+  }
+
+  h1 {
+    @apply
+    text-5xl
+    font-semibold
+    
+  }
+  
+  h2 {
+    @apply
+    text-4xl
+    font-semibold
+  }
+
+  h3 {
+    @apply
+    text-3xl
+    font-medium
+  }
+
+  h4 {
+    @apply
+    text-2xl
+    font-medium
+  }
+
+  h5 {
+    @apply
+    text-xl
+    font-medium
+  }
+
+  h6 {
+    @apply
+    text-lg
+    font-medium
+    text-purple;
+  }
+
+  a {
+    @apply
+    font-medium
+  }
 }

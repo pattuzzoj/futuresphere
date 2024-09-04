@@ -19,11 +19,11 @@ export default function SignUp() {
 
   return (
     <Page title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}>
-      <div class="flex flex-col justify-between h-[100vh]">
+      <div class="flex justify-center items-center">
         <div class="lg:flex lg:justify-center gap-8">
           <div class="flex flex-col justify-center items-center gap-3">
             <h1 class="self-center lg:self-start">{t("title")}</h1>
-            <Form class="flex flex-col gap-2.5 max-w-[40rem]" onSubmit={() => {}}>
+            <Form class="flex flex-col gap-2.5 md:w-[35rem]" onSubmit={() => {}}>
               <Field 
               name="username"
               validate={[
