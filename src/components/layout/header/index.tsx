@@ -202,7 +202,7 @@ function Header() {
           <A class="text-xl hover:text-purple" activeClass="text-purple" href="/careers" end>{t("header.menu.careers")}</A>
           <A class="text-xl hover:text-purple" activeClass="text-purple" href="/blogs" end>{t("header.menu.blogs")}</A>
           <A class="text-xl hover:text-purple" activeClass="text-purple" href="/pricing" end>{t("header.menu.pricing")}</A>
-          <A class="text-xl hover:text-purple" activeClass="text-purple" href="/pricing" end>{t("header.menu.contact")}</A>
+          <A class="text-xl hover:text-purple" activeClass="text-purple" href="/contact" end>{t("header.menu.contact")}</A>
         </nav>
         <span class="flex flex-col items-center gap-0.5 w-full">
           <a class="w-full text-center rounded-full px-1.25 py-0.375 text-white bg-purple" href="/login">{t("ui.login")}</a>
