@@ -8,7 +8,7 @@ function Footer() {
     <footer class="bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 p-1 text-white md:p-1.5">
       <hr />
       <div class="my-1 mb-1 flex flex-col items-center sm:flex-row sm:justify-between">
-        <a class="flex h-1.75" href="/"><img src="src/assets/icons/logo.svg" alt="" /> FutureSphere</a>
+        <a class="flex h-1.75" href="/"><img src="/assets/icons/logo.svg" alt="" /> FutureSphere</a>
         <nav aria-label="Menu" class="flex gap-1">
           <a class="hover:text-dark" href="/about">{t("footer.menu.about")}</a>
           <a class="hover:text-dark" href="/careers">{t("footer.menu.careers")}</a>
