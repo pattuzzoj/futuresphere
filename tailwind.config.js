@@ -1055,7 +1055,7 @@ export default {
         white: '#F9FAFB'
       },
       backgroundImage: {
-        'aside': "url('./assets/images/aside.svg')"
+        'aside': "url('/assets/images/aside.svg')"
       }
     },
   },
