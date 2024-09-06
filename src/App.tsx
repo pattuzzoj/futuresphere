@@ -1,11 +1,12 @@
 import { Router } from '@solidjs/router';
-import routes from './routes';
 import { MetaProvider } from '@solidjs/meta';
+import routes from './routes';
+import Layout from "components/layout"
 
 export default function App() {
   return (
     <MetaProvider>
-      <Router>
+      <Router root={Layout}>
         {routes}
       </Router>
     </MetaProvider>

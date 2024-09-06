@@ -1,15 +1,16 @@
 import { createSignal, For } from 'solid-js';
-import { translate, scopedTranslator } from "i18n";
-import Page from 'components/layout/page';
+import { useTranslator } from "i18n";
+import MetaData from 'components/meta';
 import Aside from 'components/layout/aside';
 import BlogCard from "components/ui/cards/BlogCard";
 
 export default function Blogs() {
-  const t = scopedTranslator(translate, "blogs");
+  const t = useTranslator("blogs");
   const [category, setCategory] = createSignal(["All", "Todos"]);
 
   return (
-    <Page title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")} >
+    <>
+      <MetaData title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}/>
       <div class="flex flex-col text-center gap-1 md:gap-1.25 lg:gap-1.5">
         <h1>{t("blogs.title")}</h1>
         <p>{t("blogs.text")}</p>
@@ -46,6 +47,6 @@ export default function Blogs() {
         </div>
       </div>
       <Aside />
-    </Page>
+    </>
   );
 }

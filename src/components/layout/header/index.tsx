@@ -1,16 +1,19 @@
-import { createSignal, Show } from "solid-js";
+import { createSignal, Match, Show, Switch } from "solid-js";
 import { A } from "@solidjs/router";
-import { translate, scopedTranslator, setLocaleI18n, flag, setFlag, flags } from "i18n";
+import { useTranslator, useLanguage } from "i18n";
 import useTheme from "theme";
 import Icon from "components/ui/icon";
 import Logo from "components/ui/logo";
+import portuguese from "assets/icons/flags/brazil.svg";
+import english from "assets/icons/flags/english.svg";
+import spanish from "assets/icons/flags/spain.svg";
 
 function Header() {
   const [theme, setTheme] = useTheme();
   const [menuIsOpen, setMenuIsOpen] = createSignal(false);
   const [menuLanguageisOpen, setMenuLanguageIsOpen] = createSignal(false);
-  const [_language, setLanguage] = setLocaleI18n();
-  const t = scopedTranslator(translate, "global");
+  const t = useTranslator("global");
+  const [lang, setLang] = useLanguage();
 
   return (
     <header class="
@@ -49,48 +52,29 @@ function Header() {
         <span class="font-black text-purple">&nbsp;|&nbsp;</span>
         <span class="flex items-center gap-1">
           <span class="relative">
-            <span class="flex items-center">
-              <button
-                class=""
-                onClick={() => setMenuLanguageIsOpen(!menuLanguageisOpen())}
-              >
-                <img class="size-2" src={flag()} alt="" />
-              </button>
+            <span class="flex items-center" onClick={() => setMenuLanguageIsOpen(!menuLanguageisOpen())}>
+              <Switch>
+                <Match when={lang() == "pt"}>
+                  <img class="size-2" src={portuguese} alt="" />
+                </Match>
+                <Match when={lang() == "en"}>
+                  <img class="size-2" src={english} alt="" />
+                </Match>
+                <Match when={lang() == "es"}>
+                  <img class="size-2" src={spanish} alt="" />
+                </Match>
+              </Switch>
               <div
                 class={`${menuLanguageisOpen() ? "flex" : "hidden"} absolute left-50 -translate-x-50 top-100 w-3 flex-col items-center gap-0 rounded-lg bg-dark p-0.5 dark:bg-white`}
               >
-                <button
-                  title="Portuguese"
-                  class={`${flag().includes("/br") && "hidden"}`}
-                  onClick={() => {
-                    setLanguage("pt");
-                    setFlag(flags.pt);
-                    setMenuLanguageIsOpen(!menuLanguageisOpen());
-                  }}
-                >
-                  <img class="size-2" src={flags['pt']} alt="" />
+                <button title="Português" onClick={() => setLang("pt")}>
+                  <img class="size-2" src={portuguese} alt="" />
                 </button>
-                <button
-                  title="English"
-                  class={`${flag().includes("/en") && "hidden"}`}
-                  onClick={() => {
-                    setLanguage("en");
-                    setFlag(flags.en);
-                    setMenuLanguageIsOpen(!menuLanguageisOpen());
-                  }}
-                >
-                  <img class="size-2" src={flags['en']} alt="" />
+                <button title="English" onClick={() => setLang("en")}>
+                  <img class="size-2" src={english} alt="" />
                 </button>
-                <button
-                  title="Spanish"
-                  class={`${flag().includes("/sp") && "hidden"}`}
-                  onClick={() => {
-                    setLanguage("es");
-                    setFlag(flags.es);
-                    setMenuLanguageIsOpen(!menuLanguageisOpen());
-                  }}
-                >
-                  <img class="size-2" src={flags['es']} alt="" />
+                <button title="Español" onClick={() => setLang("es")}>
+                  <img class="size-2" src={spanish} alt="" />
                 </button>
               </div>
             </span>
@@ -126,13 +110,18 @@ function Header() {
       bg-dark dark:bg-white
       `}>
         <span class="w-100 flex justify-between items-center">
-          <span class={`${menuLanguageisOpen() && "bg-white dark:bg-dark"} relative flex items-center rounded-lg p-0.25 transition-none`}>
-            <button
-              class=""
-              onClick={() => setMenuLanguageIsOpen(!menuLanguageisOpen())}
-            >
-              <img class="size-2.5" src={flag()} alt="" />
-            </button>
+          <span class={`${menuLanguageisOpen() && "bg-white dark:bg-dark"} relative flex items-center rounded-lg p-0.25 transition-none`} onClick={() => setMenuLanguageIsOpen(!menuLanguageisOpen())}>
+            <Switch>
+              <Match when={lang() == "pt"}>
+                <img class="size-2.5" src={portuguese} alt="" />
+              </Match>
+              <Match when={lang() == "en"}>
+                <img class="size-2.5" src={english} alt="" />
+              </Match>
+              <Match when={lang() == "es"}>
+                <img class="size-2.5" src={spanish} alt="" />
+              </Match>
+            </Switch>
             <div
               class={
                 `${menuLanguageisOpen() ? "flex" : "hidden"}
@@ -141,38 +130,14 @@ function Header() {
                 rounded-lg p-0.25 bg-white dark:bg-dark
                 `}
             >
-              <button
-                title="Portuguese"
-                class={`${flag().includes("/br") && "hidden"}`}
-                onClick={() => {
-                  setLanguage("pt");
-                  setFlag(flags.pt);
-                  setMenuLanguageIsOpen(!menuLanguageisOpen());
-                }}
-              >
-                <img class="size-2.5" src={flags['pt']} alt="" />
+              <button title="Português" onClick={() => setLang("pt")}>
+                <img class="size-2.5" src={portuguese} alt="" />
               </button>
-              <button
-                title="English"
-                class={`${flag().includes("/en") && "hidden"}`}
-                onClick={() => {
-                  setLanguage("en");
-                  setFlag(flags.en);
-                  setMenuLanguageIsOpen(!menuLanguageisOpen());
-                }}
-              >
-                <img class="size-2.5" src={flags['en']} alt="" />
+              <button title="English" onClick={() => setLang("en")}>
+                <img class="size-2.5" src={english} alt="" />
               </button>
-              <button
-                title="Spanish"
-                class={`${flag().includes("/sp") && "hidden"}`}
-                onClick={() => {
-                  setLanguage("es");
-                  setFlag(flags.es);
-                  setMenuLanguageIsOpen(!menuLanguageisOpen());
-                }}
-              >
-                <img class="size-2.5" src={flags['es']} alt="" />
+              <button title="Español" onClick={() => setLang("es")}>
+                <img class="size-2.5" src={spanish} alt="" />
               </button>
             </div>
           </span>

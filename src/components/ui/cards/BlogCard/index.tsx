@@ -1,4 +1,4 @@
-import { scopedTranslator, translate } from "i18n";
+import { useTranslator } from "i18n";
 
 interface BlogCardProps {
   thumbnail: string;
@@ -8,7 +8,7 @@ interface BlogCardProps {
 }
 
 function BlogCard(props: BlogCardProps) {
-  const t = scopedTranslator(translate, "global");
+  const t = useTranslator("global");
   
   return (
     <div class="flex flex-col text-start gap-1.25">

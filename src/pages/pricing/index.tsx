@@ -1,13 +1,14 @@
-import { scopedTranslator, translate } from "i18n";
-import Page from 'components/layout/page';
+import { useTranslator } from "i18n";
+import MetaData from "components/meta";
 import Aside from 'components/layout/aside';
 import Icon from "components/ui/icon";
 
 export default function Pricing() {
-  const t = scopedTranslator(translate, "pricing");
+  const t = useTranslator("pricing");
 
   return (
-    <Page title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}>
+    <>
+      <MetaData title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}/>
       <div class="flex flex-col text-center gap-2.5 lg:gap-2.5">
         <div class="flex flex-col text-center gap-1 md:gap-1.25">
           <h1>{t("title")}</h1>
@@ -84,6 +85,6 @@ export default function Pricing() {
         </div>
       </div>
       <Aside />
-    </Page>
+    </>
   );
 }

@@ -6,7 +6,7 @@ interface Props {
   keywords: string;
 };
 
-export default function MetaData(props: Props) {
+function MetaData(props: Props) {
   return (
   <>
     <Title>{props.title}</Title>
@@ -16,3 +16,5 @@ export default function MetaData(props: Props) {
   </>
   )
 }
+
+export default MetaData;

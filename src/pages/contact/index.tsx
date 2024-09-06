@@ -1,7 +1,7 @@
 import { For } from "solid-js";
 import { createForm, email, minLength, required, pattern } from '@modular-forms/solid';
-import { translate, scopedTranslator } from "i18n";
-import Page from 'components/layout/page';
+import { useTranslator } from "i18n";
+import MetaData from "components/meta"; 
 import Section from 'components/layout/section';
 import Aside from 'components/layout/aside';
 import Input from 'components/form/input';
@@ -9,7 +9,7 @@ import OfficeCard from "components/ui/cards/OfficeCard";
 import InfoCard from "components/ui/cards/InfoCard";
 
 export default function Contact() {
-  const t = scopedTranslator(translate, "contact");
+  const t = useTranslator("contact");
 
   type contactForm = {
     firstName: string;
@@ -32,7 +32,8 @@ export default function Contact() {
   });
 
   return (
-    <Page title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}>
+    <>
+      <MetaData title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}/>
       <Section>
         <h1>{t("title")}</h1>
         <p>{t("text")}</p>
@@ -249,6 +250,6 @@ export default function Contact() {
         </div>
       </Section>
       <Aside />
-    </Page>
+    </>
   );
 }

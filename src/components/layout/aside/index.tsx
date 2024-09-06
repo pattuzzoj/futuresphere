@@ -1,8 +1,8 @@
 import { createForm, email, required } from '@modular-forms/solid';
-import { scopedTranslator, translate } from "i18n";
+import { useTranslator } from "i18n";
 
 function Aside() {
-  const t = scopedTranslator(translate, "global");
+  const t = useTranslator("global");
 
   type newsletterForm = {
     email: string;

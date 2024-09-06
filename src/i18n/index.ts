@@ -1,44 +1,23 @@
-import { createSignal, createEffect, createMemo } from "solid-js";
+import { Accessor, Setter, createEffect, createMemo } from "solid-js";
 import { flatten, translator, scopedTranslator } from "@solid-primitives/i18n";
+import useLocalStorage from 'hooks/useLocalStorage';
 import { dictionaries } from "./languages";
-import portuguese from "assets/icons/flags/brazil.svg";
-import english from "assets/icons/flags/english.svg";
-import spanish from "assets/icons/flags/spain.svg";
 
 type Locale = "en" | "es" | "pt";
+type Scope = keyof typeof dictionaries.en;
 
-const flags = {
-  en: english,
-  es: spanish,
-  pt: portuguese,
-};
-
-const defaultLang: Locale = "pt";
-const storedLang = (localStorage.getItem("lang") as Locale) ?? defaultLang;
-
-window.addEventListener("storage", langUpdateListener);
-
-const [language, setLanguage] = createSignal<Locale>(storedLang);
-const dictionary = createMemo(() => flatten(dictionaries[language()]));
+const [lang, setLang] = useLocalStorage<Locale>("lang", "pt");
+const dictionary = createMemo(() => flatten(dictionaries[lang()]));
 const translate = translator(dictionary);
-const [flag, setFlag] = createSignal(flags[language()]);
 
-function langUpdateListener(event: StorageEvent) {
-  if (event.key === "lang" && event.newValue !== null) {
-    const newLanguage = event.newValue as Locale;
-    setLanguage(newLanguage);
-    setFlag(flags[newLanguage]);
-  }
+createEffect(() => document.documentElement.setAttribute("lang", lang()));
+
+function useTranslator<S extends Scope>(scope: S) {
+  return scopedTranslator(translate, scope);
+}
+  
+function useLanguage(): [Accessor<Locale>, Setter<Locale>] {
+  return [lang, setLang];
 }
 
-function setLocaleI18n() {
-  createEffect(() => {
-    const lang = language();
-    document.documentElement.setAttribute("lang", lang);
-    localStorage.setItem("lang", lang);
-  });
-
-  return [language, setLanguage];
-}
-
-export { translate, scopedTranslator, setLocaleI18n, flag, setFlag, flags }
+export { useTranslator, useLanguage }

@@ -1,6 +1,6 @@
 import { For } from 'solid-js';
-import { scopedTranslator, translate } from "i18n";
-import Page from 'components/layout/page';
+import { useTranslator } from "i18n";
+import MetaData from "components/meta";
 import Section from 'components/layout/section';
 import Aside from 'components/layout/aside';
 import Slide from "components/widgets/slide";
@@ -12,10 +12,11 @@ import SignupLink from 'components/typography/links/SignupLink';
 import ViewLink from 'components/typography/links/ViewLink';
 
 export default function Home() {
-  const t = scopedTranslator(translate, "home");
+  const t = useTranslator("home");
 
   return (
-    <Page title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}>
+    <>
+      <MetaData title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}/>
       <Section>
         <div>
           <h1>
@@ -180,6 +181,6 @@ export default function Home() {
         </span>
       </Section>
       <Aside />
-    </Page>
+    </>
   );
 }

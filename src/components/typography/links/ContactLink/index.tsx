@@ -1,7 +1,7 @@
-import { scopedTranslator, translate } from "i18n";
+import { useTranslator } from "i18n";
 
 function ContactLink() {
-  const t = scopedTranslator(translate, "global");
+  const t = useTranslator("global");
   
   return (
     <a title={t("ui.contact")} class="

@@ -1,8 +1,8 @@
-import { scopedTranslator, translate } from "i18n";
+import { useTranslator } from "i18n";
 import Icon from "components/ui/icon";
 
 function Footer() {
-  const t = scopedTranslator(translate, "global");
+  const t = useTranslator("global");
 
   return (
     <footer class="bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 p-1 text-white md:p-1.5">

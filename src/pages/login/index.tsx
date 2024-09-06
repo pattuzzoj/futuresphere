@@ -1,10 +1,10 @@
 import { createForm, email, required, pattern } from '@modular-forms/solid';
-import { scopedTranslator, translate } from "i18n";
-import Page from 'components/layout/page';
+import { useTranslator } from "i18n";
+import MetaData from "components/meta";
 import Input from 'components/form/input';
 
 export default function Login() {
-  const t = scopedTranslator(translate, "login");
+  const t = useTranslator("login");
 
   type signupForm = {
     email: string;
@@ -16,7 +16,8 @@ export default function Login() {
   })
 
   return (
-    <Page title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}>
+    <>
+      <MetaData title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}/>
       <div class="flex justify-center items-center">
         <div class="lg:flex lg:justify-center gap-8">
           <div class="flex flex-col justify-center items-center gap-3">
@@ -61,6 +62,6 @@ export default function Login() {
           <img class="hidden lg:block px-3 self-start" src="/assets/images/contact/hero.svg" alt="" />
         </div>
       </div>
-    </Page>
+    </>
   );
 }

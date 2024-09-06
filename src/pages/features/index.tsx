@@ -1,6 +1,6 @@
 import { For } from "solid-js";
-import { scopedTranslator, translate } from "i18n";
-import Page from 'components/layout/page';
+import { useTranslator } from "i18n";
+import MetaData from "components/meta";
 import Aside from 'components/layout/aside';
 import InfoCard from "components/ui/cards/InfoCard";
 
@@ -14,10 +14,11 @@ const featureIcons = [
   ];
 
 export default function Contact() {
-  const t = scopedTranslator(translate, "features");
+  const t = useTranslator("features");
 
   return (
-    <Page title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}>
+    <>
+      <MetaData title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}/>
       <div class="flex flex-col text-center gap-1 md:gap-1.25 lg:gap-1.5">
         <h6 class="text-purple">{t("features.section")}</h6>
         <h1>{t("features.title")}</h1>
@@ -29,6 +30,6 @@ export default function Contact() {
         </div>
       </div>
       <Aside />
-    </Page>
+    </>
   );
 }

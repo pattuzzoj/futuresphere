@@ -1,7 +1,7 @@
-import { scopedTranslator, translate } from "i18n";
+import { useTranslator } from "i18n";
 
 function SignupLink() {
-  const t = scopedTranslator(translate, "global");
+  const t = useTranslator("global");
 
   return (
     <a
