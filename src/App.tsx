@@ -1,4 +1,3 @@
-import { HttpHeader } from "@solidjs/start";
 import { Suspense } from "solid-js";
 import { Router } from "@solidjs/router";
 import { MetaProvider } from "@solidjs/meta";
@@ -11,8 +10,6 @@ export default function App() {
     <Router
       root={props => (
         <MetaProvider>
-          <HttpHeader name="cache-control" value="max-age=2592000" />
-          <HttpHeader name="content-encoding" value="gzip" />
           <Layout>
             <Suspense>
               {props.children}
