@@ -1,0 +1,3 @@
+user-agent: *
+disallow: /404/
+sitemap: https://futuresphere.vercel.app/sitemap.xml
