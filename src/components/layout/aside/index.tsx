@@ -1,5 +1,6 @@
 import { createForm, email, required } from '@modular-forms/solid';
-import { useTranslator } from "i18n";
+import { useTranslator } from "~/i18n";
+import mail from "assets/icons/icon-mail.svg";
 
 function Aside() {
   const t = useTranslator("global");
@@ -7,6 +8,8 @@ function Aside() {
   type newsletterForm = {
     email: string;
   }
+  
+  console.log("teste")
 
   const [newsletterForm, {Form, Field}] = createForm<newsletterForm>({
     revalidateOn: "input"
@@ -17,10 +20,10 @@ function Aside() {
       <div class="
       flex flex-col items-center gap-1.5 sm:gap-2 max-w-[60rem] rounded-3xl bg-aside bg-cover
       p-2 sm:p-3 md:p-3.5 lg:p-6 xl:p-7 2xl:p-8">
-        <img class="size-4" src="/assets/icons/icon-mail.svg" alt="" />
+        <img class="size-4" src={mail} alt="" />
         <h2 class="text-white">{t("aside.title")}</h2>
         <p class="text-2xl text-white">{t("aside.text")}</p>
-        <Form class="relative w-100" onSubmit={() => {}}>
+        <Form class="relative w-100">
           <Field
           name="email"
           validate={[

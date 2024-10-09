@@ -1,4 +1,4 @@
-import { useTranslator } from "i18n";
+import { useTranslator } from "i18n/index";
 
 function ContactLink() {
   const t = useTranslator("global");

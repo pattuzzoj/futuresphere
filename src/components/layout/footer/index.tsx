@@ -1,4 +1,4 @@
-import { useTranslator } from "i18n";
+import { useTranslator } from "i18n/index";
 import Icon from "components/ui/icon";
 
 function Footer() {

@@ -10,9 +10,12 @@ function MetaData(props: Props) {
   return (
   <>
     <Title>{props.title}</Title>
+    <Meta name="og:title" content={props.title}/>
+    <Meta name="twitter:title" content={props.title}/>
     <Meta name="description" content={props.description} />
-    <Meta name="keywords" content={props.keywords} />
     <Meta name="og:description" content={props.description} />
+    <Meta name="twitter:description" content={props.description}/>
+    <Meta name="keywords" content={props.keywords} />
   </>
   )
 }

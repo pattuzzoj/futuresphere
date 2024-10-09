@@ -7,11 +7,11 @@ function Input(props: InputProps) {
   const [isVisible, setIsVisible] = createSignal(false);
 
   return (
-    <div class="relative">
+    <div class="w-full relative">
       <input 
       {...props}
       type={props.type == "password" ? (isVisible() ? "text" : "password") : props.type}
-      class={`${isVisible() && "pr-3"} w-100 outline-none border-2 rounded-lg border-gray-400 focus:border-purple p-0.5 placeholder-transparent caret-purple text-black peer`}
+      class={`${isVisible() && "pr-3"} w-full outline-none border-2 rounded-lg border-gray-400 focus:border-purple p-0.5 placeholder-transparent caret-purple text-black peer`}
       />
 
       <label 

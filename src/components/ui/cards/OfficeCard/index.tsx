@@ -7,8 +7,8 @@ interface OfficeCardProps {
 
 function OfficeCard(props: OfficeCardProps) {
   return (
-    <div class="flex flex-col gap-0.5 text-start">
-      <img class="rounded-2xl" src={props.thumbnail} alt="" />
+    <div class="flex flex-col gap-0.5">
+      <img class="rounded-2xl" src={props.thumbnail} alt="" loading="lazy" />
       <div>
         <span class="text-purple">{props.city}</span>
         <p>{props.text}</p>

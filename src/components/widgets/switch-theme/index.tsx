@@ -1,6 +1,6 @@
 import { Show } from "solid-js";
 import Icon from "components/ui/icon";
-import useTheme from "theme";
+import useTheme from "theme/index";
 
 export default function SwitchTheme() {
   const [theme, setTheme] = useTheme();

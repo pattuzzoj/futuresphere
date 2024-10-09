@@ -1,19 +1,19 @@
 import { createSignal, Match, Show, Switch } from "solid-js";
 import { A } from "@solidjs/router";
-import { useTranslator, useLanguage } from "i18n";
-import useTheme from "theme";
+import { useTranslator, useLanguage } from "i18n/index";
+import useTheme from "theme/index";
 import Icon from "components/ui/icon";
 import Logo from "components/ui/logo";
-import portuguese from "assets/icons/flags/brazil.svg";
-import english from "assets/icons/flags/english.svg";
-import spanish from "assets/icons/flags/spain.svg";
+import portuguese from "assets/icons/flags/brazil.webp";
+import english from "assets/icons/flags/english.webp";
+import spanish from "assets/icons/flags/spain.webp";
+import { Menu, MenuTrigger, MenuContent } from "~/components/widgets/menu";
 
 function Header() {
   const [theme, setTheme] = useTheme();
   const [menuIsOpen, setMenuIsOpen] = createSignal(false);
-  const [menuLanguageisOpen, setMenuLanguageIsOpen] = createSignal(false);
-  const t = useTranslator("global");
   const [lang, setLang] = useLanguage();
+  const t = useTranslator("global");
 
   return (
     <header class="
@@ -51,34 +51,36 @@ function Header() {
         <A class="max-md:hidden rounded-full text-white bg-purple p-0.375 px-0.75" href="/contact" end>{t("header.menu.contact")}</A>
         <span class="font-black text-purple">&nbsp;|&nbsp;</span>
         <span class="flex items-center gap-1">
-          <span class="relative">
-            <span class="flex items-center" onClick={() => setMenuLanguageIsOpen(!menuLanguageisOpen())}>
-              <Switch>
-                <Match when={lang() == "pt"}>
-                  <img class="size-2" src={portuguese} alt="" />
-                </Match>
-                <Match when={lang() == "en"}>
-                  <img class="size-2" src={english} alt="" />
-                </Match>
-                <Match when={lang() == "es"}>
-                  <img class="size-2" src={spanish} alt="" />
-                </Match>
-              </Switch>
-              <div
-                class={`${menuLanguageisOpen() ? "flex" : "hidden"} absolute left-50 -translate-x-50 top-100 w-3 flex-col items-center gap-0 rounded-lg bg-dark p-0.5 dark:bg-white`}
-              >
+          <Menu class="relative">
+            {(menuIsOpen) => (
+              <>
+              <MenuTrigger class="flex items-center" toggle>
+                <Switch>
+                  <Match when={lang() == "pt"}>
+                    <img class="h-1.5 rounded-sm" src={portuguese} alt="portuguese" loading="lazy"/>
+                  </Match>
+                  <Match when={lang() == "en"}>
+                    <img class="h-1.5 rounded-sm" src={english} alt="english" loading="lazy"/>
+                  </Match>
+                  <Match when={lang() == "es"}>
+                    <img class="h-1.5 rounded-sm" src={spanish} alt="spanish" loading="lazy"/>
+                  </Match>
+                </Switch>
+              </MenuTrigger>
+              <MenuContent class={`${menuIsOpen() ? "flex" : "hidden"} w-max absolute left-50 -translate-x-50 top-100 flex-col items-center gap-0.5 rounded-lg bg-dark p-0.5 dark:bg-white`}>
                 <button title="Português" onClick={() => setLang("pt")}>
-                  <img class="size-2" src={portuguese} alt="" />
+                  <img class="h-1.75 rounded-sm" src={portuguese} alt="portuguese" loading="lazy"/>
                 </button>
                 <button title="English" onClick={() => setLang("en")}>
-                  <img class="size-2" src={english} alt="" />
+                  <img class="h-1.75 rounded-sm" src={english} alt="english" loading="lazy"/>
                 </button>
                 <button title="Español" onClick={() => setLang("es")}>
-                  <img class="size-2" src={spanish} alt="" />
+                  <img class="h-1.75 rounded-sm" src={spanish} alt="spanish" loading="lazy"/>
                 </button>
-              </div>
-            </span>
-          </span>
+              </MenuContent>
+              </>
+            )}
+          </Menu>
           <Show
             when={theme() == "light"} fallback={
               <button title="dark" class="hidden md:inline-block rounded-full bg-dark dark:bg-white dark:text-black" onClick={() => setTheme("light")}>
@@ -110,37 +112,36 @@ function Header() {
       bg-dark dark:bg-white
       `}>
         <span class="w-100 flex justify-between items-center">
-          <span class={`${menuLanguageisOpen() && "bg-white dark:bg-dark"} relative flex items-center rounded-lg p-0.25 transition-none`} onClick={() => setMenuLanguageIsOpen(!menuLanguageisOpen())}>
-            <Switch>
-              <Match when={lang() == "pt"}>
-                <img class="size-2.5" src={portuguese} alt="" />
-              </Match>
-              <Match when={lang() == "en"}>
-                <img class="size-2.5" src={english} alt="" />
-              </Match>
-              <Match when={lang() == "es"}>
-                <img class="size-2.5" src={spanish} alt="" />
-              </Match>
-            </Switch>
-            <div
-              class={
-                `${menuLanguageisOpen() ? "flex" : "hidden"}
-                absolute top-[78%] left-50 -translate-x-50 w-100
-                flex-col items-center gap-0
-                rounded-lg p-0.25 bg-white dark:bg-dark
-                `}
-            >
-              <button title="Português" onClick={() => setLang("pt")}>
-                <img class="size-2.5" src={portuguese} alt="" />
-              </button>
-              <button title="English" onClick={() => setLang("en")}>
-                <img class="size-2.5" src={english} alt="" />
-              </button>
-              <button title="Español" onClick={() => setLang("es")}>
-                <img class="size-2.5" src={spanish} alt="" />
-              </button>
-            </div>
-          </span>
+          <Menu class="relative">
+            {(menuIsOpen) => (
+              <>
+              <MenuTrigger class={`${menuIsOpen() && "bg-white dark:bg-dark"} w-full flex items-center rounded-b-none rounded-lg p-0.5`} toggle>
+                <Switch>
+                  <Match when={lang() == "pt"}>
+                    <img class="h-1.75 rounded-sm" src={portuguese} alt="portuguese" loading="lazy"/>
+                  </Match>
+                  <Match when={lang() == "en"}>
+                    <img class="h-1.75 rounded-sm" src={english} alt="english" loading="lazy"/>
+                  </Match>
+                  <Match when={lang() == "es"}>
+                    <img class="h-1.75 rounded-sm" src={spanish} alt="spanish" loading="lazy"/>
+                  </Match>
+                </Switch>
+              </MenuTrigger>
+              <MenuContent class={`${menuIsOpen() ? "flex bg-white dark:bg-dark" : "hidden"} absolute left-50 -translate-x-50 top-100 w-max flex-col items-center gap-0.5 rounded-t-none rounded-lg p-0.5`}>
+                <button title="Português" onClick={() => setLang("pt")}>
+                  <img class="h-1.75 rounded-sm" src={portuguese} alt="portuguese" loading="lazy"/>
+                </button>
+                <button title="English" onClick={() => setLang("en")}>
+                  <img class="h-1.75 rounded-sm" src={english} alt="english" loading="lazy"/>
+                </button>
+                <button title="Español" onClick={() => setLang("es")}>
+                  <img class="h-1.75 rounded-sm" src={spanish} alt="spanish" loading="lazy"/>
+                </button>
+              </MenuContent>
+              </>
+            )}
+          </Menu>
           <a class="
           flex items-center justify-center
           p-0.375 px-0.75

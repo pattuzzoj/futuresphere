@@ -1,19 +1,21 @@
-import { RouteSectionProps } from "@solidjs/router";
 import Header from "./header";
 import Main from "./main";
 import Footer from "./footer";
+import { JSX } from "solid-js";
 
-interface LayoutProps extends RouteSectionProps {}
+interface LayoutProps {
+  children?: JSX.Element;
+}
 
 function Layout(props: LayoutProps) {
   return (
-    <div class="min-h-[100vh] flex flex-col justify-between">
+    <>
       <Header />
       <Main>
         {props.children}
       </Main>
       <Footer />
-    </div>
+    </>
   )
 }
 

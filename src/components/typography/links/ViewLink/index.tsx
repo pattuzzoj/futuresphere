@@ -1,4 +1,4 @@
-import { useTranslator } from "i18n";
+import { useTranslator } from "i18n/index";
 
 interface ViewLinkProps {
   href: string
