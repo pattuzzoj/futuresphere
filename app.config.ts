@@ -6,13 +6,6 @@ import { config } from "vinxi/plugins/config";
 export default defineConfig({
   server: {
     preset: "vercel",
-    prerender: {
-      crawlLinks: true
-    },
-    minify: true,
-    compressPublicAssets: {
-      gzip: true
-    },
   },
   ssr: false,
   vite: {
