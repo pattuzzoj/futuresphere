@@ -3,8 +3,8 @@ import { Suspense } from "solid-js";
 import { Router } from "@solidjs/router";
 import { MetaProvider } from "@solidjs/meta";
 import { FileRoutes } from "@solidjs/start/router";
-import "./app.css";
 import Layout from "./components/layout";
+import "./app.css";
 
 export default function App() {
   return (

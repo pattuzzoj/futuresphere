@@ -9,10 +9,7 @@ export default defineConfig({
     prerender: {
       crawlLinks: true
     },
-    minify: true,
-    compressPublicAssets: {
-      gzip: true
-    },
+
   },
   ssr: false,
   vite: {
