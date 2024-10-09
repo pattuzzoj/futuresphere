@@ -15,7 +15,7 @@ export default function App() {
           <HttpHeader name="content-encoding" value="gzip" />
           <Layout>
             <Suspense>
-                {props.children}
+              {props.children}
             </Suspense>
           </Layout>
         </MetaProvider>
