@@ -24,6 +24,17 @@ export default defineConfig({
     build: {
       minify: "esbuild",
       cssMinify: "esbuild",
+      rollupOptions: {
+        treeshake: {
+          preset: "smallest",
+          annotations: true,
+          correctVarValueBeforeDeclaration: false,
+          propertyReadSideEffects: false,
+          tryCatchDeoptimization: false,
+          unknownGlobalSideEffects: false,
+          moduleSideEffects: 'no-external',
+        }
+      }
     },
     plugins: [
       tsconfigPaths(),
