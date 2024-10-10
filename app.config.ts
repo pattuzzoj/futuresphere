@@ -21,15 +21,10 @@ export default defineConfig({
   },
   ssr: false,
   vite: {
-    // build: {
-    //   minify: "esbuild",
-    //   cssMinify: "esbuild",
-    //   rollupOptions: {
-    //     treeshake: {
-    //       preset: "smallest"
-    //     }
-    //   },
-    // },
+    build: {
+      minify: "esbuild",
+      cssMinify: "esbuild",
+    },
     plugins: [
       tsconfigPaths(),
       config("tailwind", {
