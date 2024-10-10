@@ -25,7 +25,7 @@ export default function About() {
         <img class="self-center aspect-ultrawide rounded-2xl" src={hero} alt="" fetchpriority="high"/>
       </Section>
       <Section>
-        <h6>{t("story.section")}</h6>
+        <h2 class="text-base">{t("story.section")}</h2>
         <div class="flex flex-col md:flex-row">
           <p>{t("story.stories")[0].text}</p>
         </div>
@@ -34,7 +34,7 @@ export default function About() {
         </div>
       </Section>
       <Section>
-        <h6>{t("clients.section")}</h6>
+        <span>{t("clients.section")}</span>
         <h2>{t("clients.title")}</h2>
         <p>{t("clients.text")}</p>
         <div class="flex flex-wrap justify-center gap-4 mt-1.5">
@@ -57,7 +57,7 @@ export default function About() {
         </div>
       </Section>
       <Section>
-        <h6>{t("values.section")}</h6>
+        <span>{t("values.section")}</span>
         <h2>{t("values.title")}</h2>
         <p>{t("values.text")}</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center items-start gap-3 mt-2">
@@ -67,7 +67,7 @@ export default function About() {
         </div>
       </Section>
       <Section>
-        <h6>{t("offices.section")}</h6>
+        <span>{t("offices.section")}</span>
         <h2>{t("offices.title")}</h2>
         <p>{t("offices.text")}</p>
         <div class="grid gap-4 text-start md:grid-cols-2 md:gap-3 lg:grid-cols-3 lg:gap-2">
@@ -88,7 +88,7 @@ export default function About() {
         </span>
       </Section>
       <Section>
-        <h6>{t("careers.section")}</h6>
+        <span>{t("careers.section")}</span>
         <h2>{t("careers.title")}</h2>
         <p>{t("careers.text")}</p>
         <br />

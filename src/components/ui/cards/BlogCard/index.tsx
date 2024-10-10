@@ -12,7 +12,7 @@ function BlogCard(props: BlogCardProps) {
   
   return (
     <div class="flex flex-col text-start gap-1.25">
-      <img class="aspect-card rounded-2xl" src={props.thumbnail} alt="" loading='lazy' />
+      <img class="aspect-square rounded-2xl" src={props.thumbnail} alt="" loading='lazy' />
       <span class="self-start bg-purple-light rounded-full p-0.5 text-white">{props.category}</span>
       <h5>{props.title}</h5>
       <p>{props.text}</p>

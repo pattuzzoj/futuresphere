@@ -20,7 +20,7 @@ export default function Contact() {
     <>
       <MetaData title={t("meta.title")} description={t("meta.description")} keywords={t("meta.keywords")}/>
       <div class="flex flex-col text-center gap-1 md:gap-1.25 lg:gap-1.5">
-        <h6 class="text-purple">{t("features.section")}</h6>
+        <span class="text-purple">{t("features.section")}</span>
         <h1>{t("features.title")}</h1>
         <p>{t("features.text")}</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center items-start gap-3 mt-2">

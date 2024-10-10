@@ -218,7 +218,7 @@ export default function Contact() {
         </div>
       </Section>
       <Section>
-        <h6 class="text-purple">{t("offices.section")}</h6>
+        <span class="text-purple">{t("offices.section")}</span>
         <h2>{t("offices.title")}</h2>
         <p>{t("offices.text")}</p>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-3 lg:gap-2 text-start">
@@ -235,7 +235,7 @@ export default function Contact() {
         </div>
       </Section>
       <Section>
-        <h6 class="text-purple">{t("faq.section")}</h6>
+        <span class="text-purple">{t("faq.section")}</span>
         <h2>{t("faq.title")}</h2>
         <p>{t("faq.text")} futuresphere@gmail.com</p>
         <div class="grid lg:grid-cols-2 gap-3 md:gap-4">

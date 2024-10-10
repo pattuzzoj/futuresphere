@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </Section>
       <Section>
-        <h6 class="text-purple"><span class="text-purple">{t("features.section")}</span></h6>
+        <span class="text-purple"><span class="text-purple">{t("features.section")}</span></span>
         <h2>
           {t("features.title")}
         </h2>
@@ -61,7 +61,7 @@ export default function Home() {
         </span>
       </Section>
       <Section>
-        <h6 class="text-purple">{t("our mission statement.section")}</h6>
+        <span class="text-purple">{t("our mission statement.section")}</span>
         <div class="flex justify-center">
           <DescriptionCard
             thumbnail="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </Section>
       <Section>
-        <h6 class="text-purple">{t("our clients.section")}</h6>
+        <span class="text-purple">{t("our clients.section")}</span>
         <h2>
           {t("our clients.title")}
         </h2>
@@ -99,7 +99,7 @@ export default function Home() {
         <Slide type="item" control="buttons" position="start">
           <div class="grid md:grid-cols-2 gap-1.5 text-start">
             <div class="flex flex-col justify-center gap-1 text-start">
-              <h6 class="text-purple">{t("services.section")}</h6>
+              <span class="text-purple">{t("services.section")}</span>
               <h4>{t("services.services")[0].title}</h4>
               <p>{t("services.services")[0].text}</p>
             </div>
@@ -107,7 +107,7 @@ export default function Home() {
           </div>
           <div class="grid md:grid-cols-2 gap-1.5 text-start">
             <div class="flex flex-col justify-center gap-1 text-start">
-              <h6 class="text-purple">{t("services.section")}</h6>
+              <span class="text-purple">{t("services.section")}</span>
               <h4>{t("services.services")[1].title}</h4>
               <p>{t("services.services")[1].text}</p>
             </div>
@@ -115,7 +115,7 @@ export default function Home() {
           </div>
           <div class="grid md:grid-cols-2 gap-1.5 text-start">
             <div class="flex flex-col justify-center gap-1 text-start">
-              <h6 class="text-purple">{t("services.section")}</h6>
+              <span class="text-purple">{t("services.section")}</span>
               <h4>{t("services.services")[2].title}</h4>
               <p>{t("services.services")[2].text}</p>
             </div>
@@ -124,7 +124,7 @@ export default function Home() {
         </Slide>
       </Section>
       <Section>
-        <h6 class="text-purple">{t("testimonials.section")}</h6>
+        <span class="text-purple">{t("testimonials.section")}</span>
         <h2>{t("testimonials.title")}</h2>
         <Slide type="item" control="buttons" position="end">
           <div class="grid md:grid-cols-2 gap-1.5 text-start">
@@ -160,7 +160,7 @@ export default function Home() {
         </Slide>
       </Section>
       <Section>
-        <h6 class="text-purple">{t("blogs.section")}</h6>
+        <span class="text-purple">{t("blogs.section")}</span>
         <h2>
           {t("features.title")}
         </h2>

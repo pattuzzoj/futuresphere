@@ -13,9 +13,23 @@ export default defineConfig({
     compressPublicAssets: {
       gzip: true
     },
+    rollupConfig: {
+      treeshake: {
+        preset: "smallest"
+      }
+    }
   },
   ssr: false,
   vite: {
+    build: {
+      minify: "esbuild",
+      cssMinify: "esbuild",
+      rollupOptions: {
+        treeshake: {
+          preset: "smallest"
+        }
+      },
+    },
     plugins: [
       tsconfigPaths(),
       config("tailwind", {
@@ -28,5 +42,3 @@ export default defineConfig({
     ],
   }
 });
-
-// teste

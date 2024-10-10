@@ -38,7 +38,7 @@ export default function Pricing() {
             </div>
           </div>
           <div class="flex flex-col gap-1.25 dark:text-white max-w-24 shadow-purple shadow-inner p-1.5 rounded-2xl">
-            <h5 class="!text-purple">{t("plans.recommended")}</h5>
+            <span class="!text-purple">{t("plans.recommended")}</span>
             <h3>{t("plans.business")}</h3>
             <p class="!text-xl"><span class="text-5xl text-purple">$19</span>/{t("plans.period")}</p>
             <p class="!text-lg">{t("plans.text")}</p>

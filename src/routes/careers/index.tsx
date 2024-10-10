@@ -22,7 +22,7 @@ export default function Careers() {
         <div class="flex flex-col md:flex-row items-center text-start gap-1.25">
           <img class="md:size-50 rounded-2xl" src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" loading='lazy' />
           <div class="flex flex-col items-center text-start gap-1.25">
-            <h6 class="self-start text-purple">{t("perks.section")}</h6>
+            <span class="self-start text-purple">{t("perks.section")}</span>
             <h2 class="self-start">{t("perks.title")}</h2>
             <p>{t("perks.text")}</p>
           </div>
@@ -41,7 +41,7 @@ export default function Careers() {
         </div>
       </Section>
       <Section>
-        <h6 class="text-purple">{t("offices.section")}</h6>
+        <span class="text-purple">{t("offices.section")}</span>
         <h2>{t("offices.title")}</h2>
         <p>{t("offices.text")}</p>
         <div class="grid gap-4 text-start md:grid-cols-2 md:gap-3 lg:grid-cols-3 lg:gap-2">
@@ -62,7 +62,7 @@ export default function Careers() {
         </span>
       </Section>
       <Section>
-        <h6 class="text-purple">{t("careers.section")}</h6>
+        <span class="text-purple">{t("careers.section")}</span>
         <h2>{t("careers.title")}</h2>
         <p>{t("careers.text")}</p>
         <br />

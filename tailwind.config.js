@@ -1049,8 +1049,8 @@ export default {
       colors: {
         dark: '#1B152B',
         'purple': {
-          DEFAULT: '#7F56D9',
-          light: '#C7A0F9'
+          DEFAULT: '#8F76E9',
+          light: '#A780D9'
         },
         white: '#F9FAFB'
       },

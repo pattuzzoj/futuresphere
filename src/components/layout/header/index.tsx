@@ -95,11 +95,11 @@ function Header() {
       </span>
 
       <Show when={menuIsOpen() == true} fallback={
-        <button class="md:hidden mr-0.375" onClick={() => setMenuIsOpen(!menuIsOpen())}>
+        <button class="md:hidden mr-0.375" aria-label="Open navigation menu" onClick={() => setMenuIsOpen(!menuIsOpen())}>
           <Icon name="RiSystemMenu2Line" color="text-white dark:text-purple size-2" />
         </button>
       }>
-        <button class="md:hidden mr-0.375" onClick={() => setMenuIsOpen(!menuIsOpen())}>
+        <button class="md:hidden mr-0.375" aria-label="Close navigation menu" onClick={() => setMenuIsOpen(!menuIsOpen())}>
           <Icon color="text-purple size-2" name="FiX" />
         </button>
       </Show>
